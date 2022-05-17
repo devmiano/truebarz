@@ -1,21 +1,12 @@
-{% import 'bootstrap/wtf.html' as wtf%} {% extends 'bootstrap/base.html'%}
+{%block content%}
+<div class="container">
+  <h2>SIGN UP</h2>
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>SIGN UP</title>
-  </head>
-  <body>
-    {%block content%}
-    <div class="container">
-      <h2>SIGN UP</h2>
-
-      <div class="form">{{wtf.quick_form(registration_form )}}</div>
-    </div>
-    {% endblock %}
-  </body>
-</html>
+  <form action="" method="post">
+    <input type="text" placeholder="username" />
+    <input type="email" placeholder="email" />
+    <input type="password" placeholder="password" />
+    <input type="submit" placeholder="submit" />
+  </form>
+</div>
+{% endblock %}
