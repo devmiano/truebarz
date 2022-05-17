@@ -1,11 +1,11 @@
 from flask import render_template,redirect,url_for,flash,request
 from flask_login import login_user,logout_user, login_required
-from .forms import LoginForm
+from .forms import LoginForm, RegistrationForm
 from .. import db
 from . import auth
 from ..models import User
 
-@auth.route('/register',methods = ["GET","POST"])
+@auth.route('/signup',methods = ["GET","POST"])
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():
