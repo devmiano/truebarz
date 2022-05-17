@@ -1,0 +1,48 @@
+@import '../base/colors';
+@import '../base/fonts';
+@import '../base/mixins';
+
+#navbar {
+  top: 0;
+  width: 100%;
+  height: 5rem;
+  z-index: 100;
+  position: fixed;
+  padding: 1rem;
+  @include row-center;
+  justify-content: space-between;
+
+  .left {
+    gap: 1rem;
+    @include row-center;
+    justify-content: flex-start;
+    .link {
+      .icon {
+        @include navicon;
+      }
+    }
+  }
+  .center {
+    .navbrand {
+      @include link;
+      @include col-center;
+
+      .logo {
+        height: 3rem;
+      }
+      .text {
+        @include brandtext;
+      }
+    }
+  }
+  .right {
+    gap: 1rem;
+    @include row-center;
+    justify-content: flex-end;
+    .link {
+      .icon {
+        @include navicon;
+      }
+    }
+  }
+}

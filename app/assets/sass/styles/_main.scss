@@ -1,3 +1,9 @@
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .lyric {
   background-image: url('../images/landing.png');
   background-repeat: no-repeat;

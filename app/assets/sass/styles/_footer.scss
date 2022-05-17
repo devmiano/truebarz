@@ -1,0 +1,10 @@
+@import '../base/colors';
+@import '../base/fonts';
+@import '../base/mixins';
+
+#footer {
+  @include row-center;
+  width: 100%;
+  height: 5rem;
+  margin-top: auto;
+}

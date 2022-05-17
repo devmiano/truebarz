@@ -69,73 +69,145 @@
         background: #f4ac32; }
 
         @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\000037}}
-        .lyric {
-          background-image: url('../images/landing.png');
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
-          height: 100vh;
-          color: #fff;
-          margin: 0 auto; }
+        #app {
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column; }
 
-          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000317}}
-          .user {
-            position: absolute;
-            top: 30%;
-            left: 5%;
-            font-size: 19px; }
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000313}}
+          .lyric {
+            background-image: url('../images/landing.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            color: #fff;
+            margin: 0 auto; }
 
-            @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000325}}
-            .lists {
-              display: flex;
+            @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000323}}
+            .user {
               position: absolute;
-              top: 50%;
-              text-transform: uppercase; }
+              top: 30%;
+              left: 5%;
+              font-size: 19px; }
 
               @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000331}}
-              .nav a {
-                justify-content: space-around;
-                text-decoration: none;
-                list-style-type: none;
-                color: #fff;
-                padding: 0 2rem; }
+              .lists {
+                display: flex;
+                position: absolute;
+                top: 50%;
+                text-transform: uppercase; }
 
-                @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000339}}
-                .nav a:hover {
-                  font-weight: bold; }
+                @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000337}}
+                .nav a {
+                  justify-content: space-around;
+                  text-decoration: none;
+                  list-style-type: none;
+                  color: #fff;
+                  padding: 0 2rem; }
 
-                  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000343}}
-                  .btn-icons {
-                    display: flex; }
+                  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000345}}
+                  .nav a:hover {
+                    font-weight: bold; }
 
-                    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000346}}
-                    .title {
-                      text-align: center;
-                      text-transform: uppercase; }
+                    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000349}}
+                    .btn-icons {
+                      display: flex; }
 
-                      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000350}}
-                      .hero {
-                        background-image: url('../images/landing.png') !important;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        height: 100vh;
-                        background-image: url('../images/landing.png'); }
+                      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000352}}
+                      .title {
+                        text-align: center;
+                        text-transform: uppercase; }
 
-                        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000358}}
-                        .landing {
-                          padding-top: 15%; }
+                        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000356}}
+                        .hero {
+                          background-image: url('../images/landing.png') !important;
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          height: 100vh;
+                          background-image: url('../images/landing.png'); }
 
-                          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000362}}
-                          .text {
-                            color: white;
-                            font-size: 70px; }
+                          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000364}}
+                          .landing {
+                            padding-top: 15%; }
 
-                            @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000366}}
-                            .btn {
-                              background-color: yellow;
-                              padding-left: 60px;
-                              padding-right: 60px;
-                              padding-top: 20px;
-                              padding-bottom: 20px;
-                              color: blue;
-                              border-radius: 5px; }
+                            @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000368}}
+                            .text {
+                              color: white;
+                              font-size: 70px; }
+
+                              @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000372}}
+                              .btn {
+                                background-color: yellow;
+                                padding-left: 60px;
+                                padding-right: 60px;
+                                padding-top: 20px;
+                                padding-bottom: 20px;
+                                color: blue;
+                                border-radius: 5px; }
+
+                                @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000312}}
+                                #navbar {
+                                  top: 0;
+                                  width: 100%;
+                                  height: 5rem;
+                                  z-index: 100;
+                                  position: fixed;
+                                  padding: 1rem;
+                                  display: flex;
+                                  flex-direction: row;
+                                  align-items: center;
+                                  justify-content: center;
+                                  justify-content: space-between; }
+                                  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000321}}
+                                  #navbar .left {
+                                    gap: 1rem;
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    justify-content: center;
+                                    justify-content: flex-start; }
+                                    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000324}}
+                                    #navbar .left .link .icon {
+                                      width: 2rem;
+                                      height: 2rem; }
+                                  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000331}}
+                                  #navbar .center .navbrand {
+                                    text-decoration: none;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center; }
+                                    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000334}}
+                                    #navbar .center .navbrand .logo {
+                                      height: 3rem; }
+                                      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000337}}
+                                      #navbar .center .navbrand .text {
+                                        color: #ffd131;
+                                        font-size: 1rem;
+                                        font-weight: 700;
+                                        font-family: 'Outfit', sans-serif;
+                                        letter-spacing: 0.2rem;
+                                        text-transform: uppercase; }
+                                  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000344}}
+                                  #navbar .right {
+                                    gap: 1rem;
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    justify-content: center;
+                                    justify-content: flex-end; }
+                                    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000347}}
+                                    #navbar .right .link .icon {
+                                      width: 2rem;
+                                      height: 2rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_footer\.scss}line{font-family:\0000313}}
+#footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5rem;
+  margin-top: auto; }

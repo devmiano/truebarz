@@ -1,0 +1,65 @@
+@mixin row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin grid-column {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+@mixin title {
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-family: $font;
+  letter-spacing: 0.05rem;
+}
+@mixin subtitle {
+  font-weight: 500;
+  font-size: 1.7rem;
+  font-family: $font;
+  letter-spacing: 0.05rem;
+}
+
+@mixin subtext {
+  font-weight: 400;
+  font-size: 1.3rem;
+  font-family: $font;
+  letter-spacing: 0.05rem;
+}
+
+@mixin text {
+  font-weight: 300;
+  font-size: 1rem;
+  font-family: $font;
+  letter-spacing: 0.05rem;
+}
+
+@mixin brandtext {
+  color: $glow-100;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: $font;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+@mixin link {
+  text-decoration: none;
+}
+@mixin btn {
+  border: none;
+  outline: none;
+}
+@mixin navicon {
+  width: 2rem;
+  height: 2rem;
+}
