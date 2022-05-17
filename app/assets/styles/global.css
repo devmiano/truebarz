@@ -1,69 +1,141 @@
-.lyric {
-  background-image: url("../images/landing.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  color: #fff;
-  margin: 0 auto;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\000037}}
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px; }
+
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000324}}
+  body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+    margin: 0; }
+
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000330}}
+    ul[role='list'], ol[role='list'] {
+      list-style: none; }
+
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000337}}
+      html:focus-within {
+        scroll-behavior: smooth; }
+
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000342}}
+        body {
+          text-rendering: optimizeSpeed;
+          line-height: 1.5;
+          background-color: #13152a; }
+
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000349}}
+          a:not([class]) {
+            text-decoration-skip-ink: auto; }
+
+            @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000355}}
+            img, picture {
+              max-width: 100%;
+              display: block; }
+
+              @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000364}}
+              input, button, textarea, select {
+                font: inherit; }
+
+                @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000369}}
+                @media (prefers-reduced-motion: reduce) {
+                  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000369}}
+                  html:focus-within {
+                    scroll-behavior: auto;   }
+                    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000375}}
+                    *, *::before, *::after {
+                      animation-duration: 0.01ms !important;
+                      animation-iteration-count: 1 !important;
+                      transition-duration: 0.01ms !important;
+                      scroll-behavior: auto !important;   }
 }
 
-.user {
-  position: absolute;
-  top: 30%;
-  left: 5%;
-  font-size: 19px;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000386}}
+::-webkit-scrollbar {
+  width: 0.4rem;
+  border-radius: 5rem; }
 
-/* navigation */
-.lists {
-  display: flex;
-  position: absolute;
-  top: 50%;
-  text-transform: uppercase;
-}
-.nav a {
-  justify-content: space-around;
-  text-decoration: none;
-  list-style-type: none;
-  color: #fff;
-  padding: 0 2rem;
-}
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000391}}
+  ::-webkit-scrollbar-track {
+    background: #1f2041; }
 
-.nav a:hover {
-  font-weight: bold;
-}
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000395}}
+    ::-webkit-scrollbar-thumb {
+      background: #ffd131;
+      border-radius: 5rem;
+      margin: 0.2rem; }
 
-.btn-icons {
-  display: flex;
-}
-.title {
-  text-align: center;
-  text-transform: uppercase;
-}
-.hero{
-    background-image: url('../images/landing.png') !important;
-    background-repeat: no-repeat;
-    /* background-position: center;  */
-    background-size:cover;
-    height:100vh;
-    background-image: url('../images/landing.png');
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\00003101}}
+      ::-webkit-scrollbar-thumb:hover {
+        background: #f4ac32; }
 
-}
-.landing{
-    padding-top:15%;
-}
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\000037}}
+        .lyric {
+          background-image: url('../images/landing.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          height: 100vh;
+          color: #fff;
+          margin: 0 auto; }
 
-.text{
-    color:white;
-    font-size:70px;
-}
-.btn{
-    background-color:yellow;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color:blue;
-    border-radius:5px;
-}
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000317}}
+          .user {
+            position: absolute;
+            top: 30%;
+            left: 5%;
+            font-size: 19px; }
+
+            @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000325}}
+            .lists {
+              display: flex;
+              position: absolute;
+              top: 50%;
+              text-transform: uppercase; }
+
+              @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000331}}
+              .nav a {
+                justify-content: space-around;
+                text-decoration: none;
+                list-style-type: none;
+                color: #fff;
+                padding: 0 2rem; }
+
+                @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000339}}
+                .nav a:hover {
+                  font-weight: bold; }
+
+                  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000343}}
+                  .btn-icons {
+                    display: flex; }
+
+                    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000346}}
+                    .title {
+                      text-align: center;
+                      text-transform: uppercase; }
+
+                      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000350}}
+                      .hero {
+                        background-image: url('../images/landing.png') !important;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        height: 100vh;
+                        background-image: url('../images/landing.png'); }
+
+                        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000358}}
+                        .landing {
+                          padding-top: 15%; }
+
+                          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000362}}
+                          .text {
+                            color: white;
+                            font-size: 70px; }
+
+                            @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\0000366}}
+                            .btn {
+                              background-color: yellow;
+                              padding-left: 60px;
+                              padding-right: 60px;
+                              padding-top: 20px;
+                              padding-bottom: 20px;
+                              color: blue;
+                              border-radius: 5px; }
