@@ -4,7 +4,17 @@
 
 #footer {
   @include row-center;
+  gap: 1rem;
   width: 100%;
   height: 5rem;
   margin-top: auto;
+
+  .text {
+    @include text;
+    color: $glow-300;
+  }
+  .copy {
+    @include text;
+    color: $glow-100;
+  }
 }

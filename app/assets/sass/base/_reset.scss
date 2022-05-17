@@ -1,4 +1,5 @@
 @import './colors';
+@import './fonts';
 
 /* // Box sizing rules */
 *,
@@ -39,9 +40,11 @@ html:focus-within {
 
 /* // Set core body defaults */
 body {
-  text-rendering: optimizeSpeed;
   line-height: 1.5;
-  background-color: #13152a;
+  color: $light-100;
+  font-family: $font;
+  background-color: $dark-500;
+  text-rendering: optimizeSpeed;
 }
 
 /* // A elements that don't have a class gets default styles */
