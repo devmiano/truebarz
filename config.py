@@ -19,7 +19,7 @@ class ProdConfig(Config):
 
 
 class DevConfig(Config):
-  SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://username:password@localhost:5432/truebarz'
+  SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://hezron:09876@localhost:5432/truebarz'
   DEBUG = True
   ASSETS_DEBUG = True
   
