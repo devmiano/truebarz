@@ -1,0 +1,29 @@
+@import '../base/colors';
+@import '../base/fonts';
+@import '../base/mixins';
+
+#hero {
+  height: 100vh;
+  @include image;
+  padding: 2rem;
+  background-image: url('/assets/images/landing.png');
+
+  .content {
+    height: 100%;
+    @include col-start;
+    .title {
+      @include title;
+      color: $glow-100;
+    }
+    .text {
+      @include subtitle;
+      margin: 1rem 0;
+      color: $light-100;
+    }
+
+    .btn {
+      @include btn;
+      @include text;
+    }
+  }
+}
