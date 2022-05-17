@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_bootstrap import Bootstrap
 from flask_assets import Environment, Bundle
 from config import config_options
 from flask_sqlalchemy import SQLAlchemy
@@ -12,6 +13,7 @@ login_manager = LoginManager()
 login_manager.session_protection = 'strong'
 login_manager.login_view = 'auth.login'
 
+bootstrap =Bootstrap()
 
 photos = UploadSet('photos',IMAGES)
 
@@ -24,6 +26,7 @@ def create_app(config_name):
   login_manager.init_app(app)
   configure_uploads(app,photos)
   mail.init_app(app)
+  bootstrap.init_app(app)
   
   assets = Environment(app)
   assets.url = app.static_url_path
