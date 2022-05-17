@@ -22,3 +22,4 @@ The required colors are in the colors.txt file
 Write all your CSS in the file in `assets/styles/global.css`
 
 Images are in the `assets/images/` folder
+

@@ -1,3 +1,46 @@
+.lyric {
+  background-image: url("../images/landing.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.user {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  font-size: 19px;
+}
+
+/* navigation */
+.lists {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  text-transform: uppercase;
+}
+.nav a {
+  justify-content: space-around;
+  text-decoration: none;
+  list-style-type: none;
+  color: #fff;
+  padding: 0 2rem;
+}
+
+.nav a:hover {
+  font-weight: bold;
+}
+
+.btn-icons {
+  display: flex;
+}
+.title {
+  text-align: center;
+  text-transform: uppercase;
+}
 .hero{
     background-image: url('../images/landing.png') !important;
     background-repeat: no-repeat;

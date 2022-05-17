@@ -1,7 +1,31 @@
-{% extends 'base.html' %}
-{% import 'macros.html' as macro %} 
-{% block content %}
-{% include 'navbar.html' %}
+{% extends 'base.html' %} {% import 'macros.html' as macro %} {% block content
+%} {% include 'navbar.html' %}
+
+<div class="lyric">
+  <!-- User Profile -->
+  <div class="user">
+    <h3>Jessica Akoth</h3>
+    <h6>jessicakoth</h6>
+  </div>
+
+  <div class="lists">
+    <div class="nav">
+      <a href="">lyrics</a>
+    </div>
+    <div class="nav">
+      <a href="">radio</a>
+    </div>
+    <div class="nav">
+      <a href="">artist</a>
+    </div>
+    <div class="nav">
+      <a href="">Songs</a>
+    </div>
+    <div class="nav">
+      <a href="">Charts</a>
+    </div>
+  </div>
+</div>
 
 <section class="hero">
     <div class="landing">
@@ -11,6 +35,4 @@
         <button class="btn">GET STARTED</button>
     </div>
 </section>
-    
-
 {% endblock %}
