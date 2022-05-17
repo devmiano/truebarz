@@ -4,8 +4,8 @@ An entertainment app that gets the latest music and current playlist. You get to
 
 ## instructions
 
-After cloning the repository run
-`python -m pip install -r requirements.txt`
+After cloning the repository run make sure you are in a new branch with the respecctive sections as per the pivotal tracker
+then run the following command `python -m pip install -r requirements.txt`
 
 Next, make sure to create a new database
 in the terminal run `psql`
