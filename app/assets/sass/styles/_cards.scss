@@ -1,0 +1,37 @@
+@import '../base/colors';
+@import '../base/fonts';
+@import '../base/mixins';
+
+#radio-card,
+#artist-card {
+  @include col-center;
+  border-radius: 0.2rem;
+  .icon {
+    @include cardicon;
+  }
+  .text {
+    @include text;
+    font-weight: 200;
+  }
+}
+
+#lyric-card {
+  @include row-start;
+  margin: 0.5rem 0;
+  border-radius: 0.2rem;
+  background-color: $dark-400;
+  .icon {
+    height: 7rem;
+  }
+  .content {
+    padding: 1rem;
+    @include col-start;
+    .name {
+      @include subtext;
+    }
+    .song {
+      @include text;
+      color: $glow-100;
+    }
+  }
+}

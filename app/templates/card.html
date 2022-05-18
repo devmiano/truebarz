@@ -1,6 +1,34 @@
 {% extends 'base.html' %} {% import 'macros.html' as macro %} {% block content
 %} {% include 'navbar.html' %}
 
-<div class="radio-card"></div>
+<div id="radio-card">
+  <img
+    class="icon"
+    src="{{url_for('static', filename='icons/radio.svg')}}"
+    alt="radio"
+  />
+  <p class="text">Radio station</p>
+</div>
+
+<div id="artist-card">
+  <img
+    class="icon"
+    src="{{url_for('static', filename='icons/user.svg')}}"
+    alt="artist"
+  />
+  <p class="text">Radio station</p>
+</div>
+
+<div id="lyric-card">
+  <img
+    class="icon"
+    src="{{url_for('static', filename='icons/user-music.svg')}}"
+    alt="lyric"
+  />
+  <div class="content">
+    <p class="name">Artist Name</p>
+    <p class="song">Song Title</p>
+  </div>
+</div>
 
 {% endblock %}
