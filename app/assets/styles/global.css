@@ -111,8 +111,8 @@
                     outline: none;
                     color: #35305a;
                     background: linear-gradient(91.47deg, #ffd131 8.81%, #f4ac32 94.74%);
-                    border-radius: 0.2rem;
                     padding: 1rem 2rem;
+                    border-radius: 0.2rem;
                     text-transform: uppercase;
                     font-size: 1rem;
                     font-weight: 400;
@@ -199,3 +199,65 @@
       font-family: 'Outfit', sans-serif;
       letter-spacing: 0.05rem;
       color: #ffd131; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_profile\.scss}line{font-family:\0000315}}
+#profile {
+  height: 300vh;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  background-image: url('/assets/images/hero.png'); }
+
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000316}}
+  #categories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%; }
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000320}}
+    #categories .radio, #categories .playlist, #categories .artist {
+      width: 100%;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center; }
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000322}}
+      #categories .radio .header, #categories .playlist .header,
+      #categories .artist .header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000325}}
+        #categories .radio .header .content .title,
+        #categories .playlist .header .content .title,
+        #categories .artist .header .content .title {
+          line-height: 1;
+          font-weight: 400;
+          font-size: 3.2rem;
+          font-family: 'Outfit', sans-serif; }
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000328}}
+          #categories .radio .header .content .text,
+          #categories .playlist .header .content .text,
+          #categories .artist .header .content .text {
+            font-weight: 200;
+            font-size: 1.7rem;
+            font-family: 'Outfit', sans-serif;
+            color: #ffd131; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000334}}
+        #categories .radio .header .round, #categories .playlist .header .round,
+        #categories .artist .header .round {
+          text-decoration: none;
+          outline: none;
+          color: #e8e5f1;
+          border-radius: 5rem;
+          padding: 0.8rem 1.5rem;
+          letter-spacing: 0.2rem;
+          background: transparent;
+          text-transform: uppercase;
+          border: 1px solid #f4ac32; }

@@ -68,9 +68,19 @@
   outline: none;
   color: $dark-400;
   background: $glow;
-  border-radius: 0.2rem;
   padding: 1rem 2rem;
+  border-radius: 0.2rem;
   text-transform: uppercase;
+}
+@mixin btn-round {
+  outline: none;
+  color: $light-100;
+  border-radius: 5rem;
+  padding: 0.8rem 1.5rem;
+  letter-spacing: 0.2rem;
+  background: transparent;
+  text-transform: uppercase;
+  border: 1px solid $glow-300;
 }
 
 @mixin navicon {

@@ -1,0 +1,36 @@
+@import '../base/colors';
+@import '../base/fonts';
+@import '../base/mixins';
+
+#categories {
+  @include col-start;
+  width: 100%;
+  .radio,
+  .playlist,
+  .artist {
+    width: 100%;
+    padding: 2rem;
+    @include col-start;
+
+    .header {
+      width: 100%;
+      @include row-center;
+      justify-content: space-between;
+      .content {
+        .title {
+          @include title;
+        }
+        .text {
+          @include subtitle;
+          color: $glow-100;
+        }
+      }
+      .round {
+        @include link;
+        @include btn-round;
+      }
+    }
+    .cards {
+    }
+  }
+}
