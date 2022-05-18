@@ -36,3 +36,37 @@
     }
   }
 }
+#signup {
+  height: 100vh;
+  width: 100%;
+  @include image;
+  padding: 5rem 2rem;
+  background-image: url('/assets/images/signup.png');
+
+  .signup {
+    width: 60%;
+    float: right;
+    @include col-start;
+
+    .title {
+      @include title;
+    }
+
+    .form {
+      @include col-start;
+      width: 80%;
+      margin: 2rem 0;
+
+      .input {
+        @include input;
+        @include text;
+      }
+
+      .btn {
+        width: 80%;
+        margin: 0.5rem 0;
+        @include btn;
+      }
+    }
+  }
+}

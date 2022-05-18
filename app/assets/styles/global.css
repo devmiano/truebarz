@@ -250,6 +250,80 @@
           border-radius: 0.2rem;
           text-transform: uppercase; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000348}}
+#signup {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 5rem 2rem;
+  background-image: url('/assets/images/signup.png'); }
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000354}}
+  #signup .signup {
+    width: 60%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; }
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000358}}
+    #signup .signup .title {
+      line-height: 1;
+      font-weight: 400;
+      font-size: 3.2rem;
+      font-family: 'Outfit', sans-serif; }
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000362}}
+      #signup .signup .form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 80%;
+        margin: 2rem 0; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000366}}
+        #signup .signup .form .input {
+          width: 80%;
+          outline: none;
+          font-size: 1rem;
+          padding: 0.7rem;
+          margin: 0.5rem 0;
+          color: #e8e5f1;
+          border-radius: 0.2rem;
+          background: transparent;
+          border: 1px solid #ffd131;
+          font-size: 1rem;
+          font-weight: 400;
+          font-family: 'Outfit', sans-serif;
+          letter-spacing: 0.05rem; }
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000376}}
+          #signup .signup .form .input::placeholder {
+            color: #ffd131;
+            background: transparent; }
+            @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000380}}
+            #signup .signup .form .input:focus {
+              color: #ffd131;
+              background: transparent; }
+              @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000384}}
+              #signup .signup .form .input:active {
+                color: #ffd131;
+                background: transparent; }
+                @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000388}}
+                #signup .signup .form .input:focus-visible {
+                  color: #ffd131;
+                  background: transparent; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000371}}
+        #signup .signup .form .btn {
+          width: 80%;
+          margin: 0.5rem 0;
+          border: none;
+          outline: none;
+          color: #35305a;
+          background: linear-gradient(91.47deg, #ffd131 8.81%, #f4ac32 94.74%);
+          padding: 1rem 2rem;
+          border-radius: 0.2rem;
+          text-transform: uppercase; }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000315}}
 #navbar {
   top: 0;
