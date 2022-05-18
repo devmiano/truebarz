@@ -3,8 +3,11 @@
 @import '../base/mixins';
 
 #categories {
+  @include image;
   @include col-start;
   width: 100%;
+  padding: 2rem;
+  background-image: url('/assets/images/category.png');
   .radio,
   .playlist,
   .artist {
@@ -27,6 +30,7 @@
       }
       .round {
         @include link;
+        font-size: 0.8rem;
         @include btn-round;
       }
     }
