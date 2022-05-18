@@ -13,12 +13,12 @@
     @include col-start;
     .title {
       @include title;
-      color: $glow-100;
+      color: $light-100;
     }
     .text {
       @include subtitle;
       margin: 1rem 0;
-      color: $light-100;
+      color: $glow-100;
     }
 
     .btn {
