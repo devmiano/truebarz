@@ -1,15 +1,24 @@
-<section>
-  <div>
-    <h2>Login here..</h2>
-    <form method="post" action>
-      <input type="text" placeholder="username" autocomplete="off" />
+{% extends 'base.html' %} {% import 'macros.html' as macro %} {% block content
+%}
+<section id="login">
+  <div class="login">
+    <h2 class="title">Login here..</h2>
+    <form class="form" method="post" action>
       <input
+        class="input"
+        type="text"
+        placeholder="username"
+        autocomplete="off"
+      />
+      <input
+        class="input"
         type="password"
         name="password"
         placeholder="password"
         autocomplete="off"
       />
-      <input type="submit" placeholder="Login" />
+      <input class="btn" type="submit" placeholder="Login" />
     </form>
   </div>
 </section>
+{% endblock %}

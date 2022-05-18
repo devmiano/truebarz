@@ -70,6 +70,34 @@
 @mixin link {
   text-decoration: none;
 }
+@mixin input {
+  width: 80%;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  color: $light-100;
+  border-radius: 0.2rem;
+  background: transparent;
+  border: 1px solid $glow-100;
+
+  &::placeholder {
+    color: $glow-100;
+    background: transparent;
+  }
+  &:focus {
+    color: $glow-100;
+    background: transparent;
+  }
+  &:active {
+    color: $glow-100;
+    background: transparent;
+  }
+  &:focus-visible {
+    color: $glow-100;
+    background: transparent;
+  }
+}
 
 @mixin btn {
   border: none;
