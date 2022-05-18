@@ -77,9 +77,9 @@
   padding: 0.7rem;
   margin: 0.5rem 0;
   color: $light-100;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   background: transparent;
-  border: 1px solid $glow-100;
+  border: 2px solid $glow-100;
 
   &::placeholder {
     color: $glow-100;
@@ -116,7 +116,7 @@
   letter-spacing: 0.2rem;
   background: transparent;
   text-transform: uppercase;
-  border: 1px solid $glow-300;
+  border: 2px solid $glow-300;
 }
 
 @mixin navicon {

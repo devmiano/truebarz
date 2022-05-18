@@ -216,9 +216,9 @@
           padding: 0.7rem;
           margin: 0.5rem 0;
           color: #e8e5f1;
-          border-radius: 0.2rem;
+          border-radius: 0.4rem;
           background: transparent;
-          border: 1px solid #ffd131;
+          border: 2px solid #ffd131;
           font-size: 1rem;
           font-weight: 400;
           font-family: 'Outfit', sans-serif;
@@ -290,9 +290,9 @@
           padding: 0.7rem;
           margin: 0.5rem 0;
           color: #e8e5f1;
-          border-radius: 0.2rem;
+          border-radius: 0.4rem;
           background: transparent;
-          border: 1px solid #ffd131;
+          border: 2px solid #ffd131;
           font-size: 1rem;
           font-weight: 400;
           font-family: 'Outfit', sans-serif;
@@ -472,7 +472,7 @@
           letter-spacing: 0.2rem;
           background: transparent;
           text-transform: uppercase;
-          border: 1px solid #f4ac32; }
+          border: 2px solid #f4ac32; }
       @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000346}}
       #categories .radio .cards, #categories .playlist .cards, #categories .artist .cards {
         width: 100%;
