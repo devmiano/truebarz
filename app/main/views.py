@@ -11,3 +11,4 @@ def index():
   title = 'All in One Music App'
  
   return render_template('index.html', title=title)
+
