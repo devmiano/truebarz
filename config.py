@@ -2,7 +2,6 @@ import os
 
 class Config:
   '''class to configure url parameters'''
-  # search
   URL = "https://radio-browser.p.rapidapi.com/json/stations/search"
   X_RAPIDAPI_KEY = os.environ.get('X_RAPIDAPI_KEY')
   PLAYLIST_API_BASE_URL = "https://shazam.p.rapidapi.com/songs/get-count"
