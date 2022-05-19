@@ -11,14 +11,17 @@
   .content {
     height: 100%;
     @include col-start;
+    padding-bottom: 2rem;
+    justify-content: flex-end;
+
     .title {
       @include title;
       color: $light-100;
     }
     .text {
-      @include subtitle;
       margin: 1rem 0;
       color: $glow-100;
+      @include subtitle;
     }
 
     .btn {

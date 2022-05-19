@@ -5,3 +5,17 @@
 <img src="{{source.favicon}}" alt="{{source.name}}" >
 
 {% endfor %} {% endmacro %}
+
+{% macro displaySourceList(playlist)%}
+{% for source in playlist %}
+
+<div id="lyric-card">
+<img class="icon" src="{{source.image}}" alt="image" />
+    <div class="content">
+        <p class="name">{{source.url}}</p>
+        <p class="song">{{source.subtitle}}</p>
+        <p>{{source.title}}</p>
+    </div>
+</div>
+{% endfor %}
+{% endmacro %}

@@ -5,7 +5,9 @@ class Config:
   # search
   URL = "https://radio-browser.p.rapidapi.com/json/stations/search"
   X_RAPIDAPI_KEY = os.environ.get('X_RAPIDAPI_KEY')
+  PLAYLIST_API_BASE_URL = "https://shazam.p.rapidapi.com/songs/get-count"
   SECRET_KEY = os.environ.get('SECRET_KEY')
+  PLAYLIST_API_KEY = os.environ.get('PLAYLIST_API_KEY')
   SQLALCHEMY_TRACK_MODIFICATIONS = False
   UPLOADED_PHOTOS_DEST ='app/assets/photos'
   MAIL_SERVER = 'smtp.googlemail.com'
@@ -22,7 +24,7 @@ class ProdConfig(Config):
 
 
 class DevConfig(Config):
-  SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://hzkialo:1234@localhost:5432/truebarz'
+  SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://devmiano:devmiano@localhost:5432/truebarz'
   DEBUG = True
   ASSETS_DEBUG = True
   
