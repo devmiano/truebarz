@@ -103,6 +103,7 @@
 @mixin btn {
   border: none;
   outline: none;
+  cursor: pointer;
   color: $dark-400;
   background: $glow;
   padding: 1rem 2rem;
@@ -111,9 +112,12 @@
 }
 @mixin btn-round {
   outline: none;
+  cursor: pointer;
+  font-weight: 300;
   color: $light-100;
+  font-size: 0.8rem;
   border-radius: 5rem;
-  padding: 0.8rem 1.5rem;
+  padding: 0.7rem 1.3rem;
   letter-spacing: 0.2rem;
   background: transparent;
   text-transform: uppercase;

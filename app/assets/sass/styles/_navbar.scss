@@ -41,8 +41,16 @@
     @include row-center;
     justify-content: flex-end;
     .link {
+      gap: 0.5rem;
+      @include link;
+      @include row-center;
+
       .icon {
         @include navicon;
+      }
+      .text {
+        @include text;
+        color: $glow-300;
       }
     }
   }

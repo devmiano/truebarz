@@ -24,8 +24,9 @@
           @include title;
         }
         .text {
-          @include subtitle;
           color: $glow-100;
+          @include subtitle;
+          margin-left: 0.5rem;
         }
       }
       .round {

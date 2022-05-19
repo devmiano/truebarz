@@ -116,6 +116,7 @@
                     #hero .content .btn {
                       border: none;
                       outline: none;
+                      cursor: pointer;
                       color: #35305a;
                       background: linear-gradient(91.47deg, #ffd131 8.81%, #f4ac32 94.74%);
                       padding: 1rem 2rem;
@@ -247,6 +248,7 @@
           margin: 0.5rem 0;
           border: none;
           outline: none;
+          cursor: pointer;
           color: #35305a;
           background: linear-gradient(91.47deg, #ffd131 8.81%, #f4ac32 94.74%);
           padding: 1rem 2rem;
@@ -321,6 +323,7 @@
           margin: 0.5rem 0;
           border: none;
           outline: none;
+          cursor: pointer;
           color: #35305a;
           background: linear-gradient(91.47deg, #ffd131 8.81%, #f4ac32 94.74%);
           padding: 1rem 2rem;
@@ -381,9 +384,24 @@
     justify-content: center;
     justify-content: flex-end; }
     @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000351}}
-    #navbar .right .link .icon {
-      width: 2.7rem;
-      height: 2.7rem; }
+    #navbar .right .link {
+      gap: 0.5rem;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; }
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000355}}
+      #navbar .right .link .icon {
+        width: 2.7rem;
+        height: 2.7rem; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000358}}
+        #navbar .right .link .text {
+          font-size: 1rem;
+          font-weight: 400;
+          font-family: 'Outfit', sans-serif;
+          letter-spacing: 0.05rem;
+          color: #f4ac32; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_footer\.scss}line{font-family:\0000316}}
 #footer {
@@ -460,31 +478,35 @@
           #categories .radio .header .content .text,
           #categories .playlist .header .content .text,
           #categories .artist .header .content .text {
+            color: #ffd131;
             font-weight: 200;
             font-size: 1.7rem;
             font-family: 'Outfit', sans-serif;
-            color: #ffd131; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000339}}
+            margin-left: 0.5rem; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000340}}
         #categories .radio .header .round, #categories .playlist .header .round,
         #categories .artist .header .round {
           text-decoration: none;
           font-size: 0.8rem;
           outline: none;
+          cursor: pointer;
+          font-weight: 300;
           color: #e8e5f1;
+          font-size: 0.8rem;
           border-radius: 5rem;
-          padding: 0.8rem 1.5rem;
+          padding: 0.7rem 1.3rem;
           letter-spacing: 0.2rem;
           background: transparent;
           text-transform: uppercase;
           border: 2px solid #f4ac32; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000346}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000347}}
       #categories .radio .cards, #categories .playlist .cards, #categories .artist .cards {
         width: 100%;
         padding: 4rem 2rem;
         gap: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000351}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000352}}
         #categories .radio .lyrics, #categories .playlist .lyrics,
         #categories .artist .lyrics {
           width: 50%;
