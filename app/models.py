@@ -18,11 +18,11 @@ class User(UserMixin, db.Model):
   last_name = db.Column(db.String(255))
   username = db.Column(db.String(255), unique=True, index=True)
   email = db.Column(db.String(255), unique=True, index=True)
+  password_hash = db.Column(db.String(255))
   bio = db.Column(db.String(255))
   profile_pic_path = db.Column(db.String(255))
-  password_hash = db.Column(db.String(255))
   playlist = db.relationship('Playlist', backref='user', lazy='dynamic')
-  
+
   @property
   def password(self):
     raise AttributeError('you cannot read the password')
@@ -37,6 +37,7 @@ class User(UserMixin, db.Model):
   def __repr__(self):
       return f'User {self.username}'
 
+    
 class Playlist(db.Model):
 
   __tablename__ = 'playlist'
@@ -50,10 +51,6 @@ class Playlist(db.Model):
 
   def __repr__(self):
         return f"Playlist('{self.url}')"
-
-
-
-
 
 
     

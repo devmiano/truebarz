@@ -3,11 +3,24 @@
   <div class="signup">
     <h2 class="title">Sign Up</h2>
 
-    <form class="form" action="" method="post">
-      <input class="input" type="text" placeholder="username" />
-      <input class="input" type="email" placeholder="email" />
-      <input class="input" type="password" placeholder="password" />
-      <input class="btn" type="submit" placeholder="submit" />
+    <form class="form" method="post">
+      {{form.csrf_token}} {{form.username( class="input" ,placeholder="username"
+      )}} {% for error in form.username.errors %}
+      <li class="error">{{error}}</li>
+      {% endfor %} {{form.email(placeholder="email" ,class="input" )}} {% for
+      error in form.email.errors %}
+      <li class="error">{{error}}</li>
+      {% endfor %} {{form.password( placeholder="password" ,class="input" )}} {%
+      for error in form.password.errors %}
+      <li class="error">{{error}}</li>
+      {% endfor %} {{form.password_confirm( placeholder="password confiration"
+      ,class="input" )}} {% for error in form.password_confirm.errors %}
+      <li class="error">{{error}}</li>
+      {% endfor %} {{form.submit(placeholder="submit", class="btn" )}} {% for
+      error in form.submit.errors %}}
+      <li class="error">{{error}}</li>
+
+      {% endfor %}
     </form>
   </div>
 </section>

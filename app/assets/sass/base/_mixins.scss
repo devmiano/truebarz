@@ -60,9 +60,10 @@
 }
 
 @mixin brandtext {
+  font-size: 0.8rem;
   color: $glow-100;
-  font-size: 1rem;
-  font-weight: 700;
+  margin: 0.2rem 0;
+  font-weight: 600;
   font-family: $font;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
@@ -102,6 +103,7 @@
 @mixin btn {
   border: none;
   outline: none;
+  cursor: pointer;
   color: $dark-400;
   background: $glow;
   padding: 1rem 2rem;
@@ -110,9 +112,12 @@
 }
 @mixin btn-round {
   outline: none;
+  cursor: pointer;
+  font-weight: 300;
   color: $light-100;
+  font-size: 0.8rem;
   border-radius: 5rem;
-  padding: 0.8rem 1.5rem;
+  padding: 0.7rem 1.3rem;
   letter-spacing: 0.2rem;
   background: transparent;
   text-transform: uppercase;
@@ -120,8 +125,8 @@
 }
 
 @mixin navicon {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.7rem;
+  height: 2.7rem;
 }
 
 @mixin cardicon {

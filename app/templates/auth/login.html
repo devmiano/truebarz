@@ -3,21 +3,18 @@
 <section id="login">
   <div class="login">
     <h2 class="title">Log In</h2>
-    <form class="form" method="post" action>
-      <input
-        class="input"
-        type="text"
-        placeholder="username"
-        autocomplete="off"
-      />
-      <input
-        class="input"
-        type="password"
-        name="password"
-        placeholder="password"
-        autocomplete="off"
-      />
-      <input class="btn" type="submit" placeholder="Login" />
+
+    <form class="form" method="post">
+      {{form.csrf_token}} {{form.username( class="input" ,placeholder="username"
+      )}} {% for error in form.username.errors %}
+      <li class="error">{{error}}</li>
+      {% endfor %} {{form.password( placeholder="password" ,class="input" )}} {%
+      for error in form.password.errors %}
+      <li class="error">{{error}}</li>
+      {% endfor %} {{form.submit(placeholder="submit", class="btn" )}} {% for
+      error in form.submit.errors %}}
+      <li class="error">{{error}}</li>
+      {% endfor %}
     </form>
   </div>
 </section>

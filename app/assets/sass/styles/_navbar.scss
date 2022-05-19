@@ -5,15 +5,16 @@
 #navbar {
   top: 0;
   width: 100%;
-  height: 5rem;
+  height: 8rem;
   z-index: 100;
+  padding: 2rem;
   position: fixed;
-  padding: 1rem;
+  background: $fade;
   @include row-center;
   justify-content: space-between;
 
   .left {
-    gap: 1rem;
+    gap: 1.2rem;
     @include row-center;
     justify-content: flex-start;
     .link {
@@ -28,7 +29,7 @@
       @include col-center;
 
       .logo {
-        height: 3rem;
+        height: 3.3rem;
       }
       .text {
         @include brandtext;
@@ -36,12 +37,20 @@
     }
   }
   .right {
-    gap: 1rem;
+    gap: 1.2rem;
     @include row-center;
     justify-content: flex-end;
     .link {
+      gap: 0.5rem;
+      @include link;
+      @include row-center;
+
       .icon {
         @include navicon;
+      }
+      .text {
+        @include text;
+        color: $glow-300;
       }
     }
   }
