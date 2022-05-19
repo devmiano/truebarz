@@ -9,10 +9,10 @@ from . import main
 
 @main.route('/')
 def index():
-  '''function that renders the homepage'''
-
+    '''function that renders the homepage'''
+    title = 'The music App'
   
-  return render_template('index.html', title=title)
+    return render_template('index.html', title=title)
 
 @main.route('/user/<uname>')
 def profile(uname):
