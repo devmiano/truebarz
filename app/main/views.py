@@ -10,7 +10,7 @@ from . import main
 @main.route('/')
 def index():
   '''function that renders the homepage'''
-  title = 'Challenge yourself with one of a kind pitch deck '
+
   
   return render_template('index.html', title=title)
 

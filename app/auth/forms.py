@@ -20,8 +20,8 @@ class RegistrationForm(FlaskForm):
         
 # login form
 class LoginForm(FlaskForm):
-    email = StringField('Your email address',validators=[InputRequired(),Email()])
-    password = StringField('Your password',validators=[InputRequired()])
-    rememberMe = BooleanField('Remember')
-    submit = StringField('Sign In ')
+    username = StringField('Enter username',validators=[InputRequired()])
+    password = PasswordField('Your password',validators=[InputRequired()])
+    remember = BooleanField('Remember')
+    submit = SubmitField('Sign In ')
 
