@@ -46,6 +46,7 @@ class Radio(db.Model):
   url = db.Column(db.String(255))
   favicon = db.Column(db.String(255))
   votes = db.Column(db.Integer)
+  
     
 class Playlist(db.Model):
 

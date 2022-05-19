@@ -22,43 +22,9 @@
       </div>
       <a class="round" href="#">view all</a>
     </div>
-    <div class="cards">
-      <div id="radio-card">
-        {{macro.displaySources(stations)}}
-            
-       
-        <p class="text">Radio station</p>
-      </div>
-      <div id="radio-card">
-        <img
-          class="icon"
-          src="{{url_for('static', filename='icons/radio.svg')}}"
-          alt="radio"
-        />
-        <p class="text">Radio station</p>
-      </div>
-      <div id="radio-card">
-        <img
-          class="icon"
-          src="{{url_for('static', filename='icons/radio.svg')}}"
-          alt="radio"
-        />
-        <p class="text">Radio station</p>
-      </div>
-      <div id="radio-card">
-        <img
-          class="icon"
-          src="{{url_for('static', filename='icons/radio.svg')}}"
-          alt="radio"
-        />
-        <p class="text">Radio station</p>
-      </div>
-    </div>
+    <div class="cards">{{macro.displaySources(stations)}}</div>
   </section>
 
-  <div class="playlist">
- {{macro.displaySourceList(playlist)}}
-  </div>
   <section class="playlist">
     <div class="header">
       <div class="content">
@@ -67,8 +33,7 @@
       </div>
       <a class="round" href="#">view all</a>
     </div>
-    <div class="lyrics">
-    </div>
+    <div class="lyrics">{{macro.displaySourceList(playlist)}}</div>
   </section>
 
   <section class="artist">
@@ -79,40 +44,7 @@
       </div>
       <a class="round" href="#">view all</a>
     </div>
-    <div class="cards">
-      <div id="artist-card">
-        <img
-          class="icon"
-          src="{{url_for('static', filename='icons/user.svg')}}"
-          alt="artist"
-        />
-        <p class="text">Artist Name</p>
-      </div>
-      <div id="artist-card">
-        <img
-          class="icon"
-          src="{{url_for('static', filename='icons/user.svg')}}"
-          alt="artist"
-        />
-        <p class="text">Artist Name</p>
-      </div>
-      <div id="artist-card">
-        <img
-          class="icon"
-          src="{{url_for('static', filename='icons/user.svg')}}"
-          alt="artist"
-        />
-        <p class="text">Artist Name</p>
-      </div>
-      <div id="artist-card">
-        <img
-          class="icon"
-          src="{{url_for('static', filename='icons/user.svg')}}"
-          alt="artist"
-        />
-        <p class="text">Artist Name</p>
-      </div>
-    </div>
+    <div class="cards"></div>
   </section>
 </div>
 

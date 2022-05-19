@@ -1,21 +1,27 @@
 {% macro displaySources(source_list) %} {% for source in source_list %}
-<p>{{source.name}}</p>
-<p>{{source.url}}</p>
-<p>{{source.votes}}</p>
-<img src="{{source.favicon}}" alt="{{source.name}}" >
-
-{% endfor %} {% endmacro %}
-
-{% macro displaySourceList(playlist)%}
-{% for source in playlist %}
+<a id="radio-card" href="{{source.url}}">
+  <div class="content">
+    {% if source.favicon %}
+    <img class="icon" src="{{source.favicon}}" alt="{{source.name}}" />
+    {% else %}
+    <img
+      class="icon"
+      src="{{url_for('static', filename='icons/radio.svg')}}"
+      alt="radio"
+    />
+    {% endif %}
+    <p class="text">{{source.name}}</p>
+  </div>
+</a>
+{% endfor %} {% endmacro %} {% macro displaySourceList(playlist)%} {% for source
+in playlist %}
 
 <div id="lyric-card">
-<img class="icon" src="{{source.image}}" alt="image" />
-    <div class="content">
-        <p class="name">{{source.url}}</p>
-        <p class="song">{{source.subtitle}}</p>
-        <p>{{source.title}}</p>
-    </div>
+  <img class="icon" src="{{source.image}}" alt="image" />
+  <div class="content">
+    <p class="name">{{source.url}}</p>
+    <p class="song">{{source.subtitle}}</p>
+    <p>{{source.title}}</p>
+  </div>
 </div>
-{% endfor %}
-{% endmacro %}
+{% endfor %} {% endmacro %}

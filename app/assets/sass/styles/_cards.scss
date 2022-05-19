@@ -2,20 +2,32 @@
 @import '../base/fonts';
 @import '../base/mixins';
 
-#radio-card,
-#artist-card {
-  @include col-center;
-  border-radius: 0.2rem;
-  .icon {
-    @include cardicon;
-  }
-  .text {
-    @include text;
-    font-weight: 200;
+#radio-card {
+  opacity: 0.7;
+  @include link;
+  padding: 1rem;
+  background-color: $dark-400;
+
+  .content {
+    opacity: 1;
+    @include col-center;
+    border-radius: 0.2rem;
+
+    .icon {
+      @include cardicon;
+    }
+    .text {
+      @include text;
+      font-weight: 200;
+      color: $light-100;
+      text-align: center;
+      text-decoration: none;
+    }
   }
 }
 
 #lyric-card {
+  @include link;
   @include row-start;
   margin: 0.5rem 0;
   border-radius: 0.2rem;

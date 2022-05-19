@@ -10,8 +10,8 @@ from . import main
 
 @main.route('/')
 def index():
-    stations = get_station() 
-    playlist = get_playlist() 
+    stations = get_station()
+    playlist = get_playlist()
     '''function that renders the homepage'''
     title = 'All in One Music App'
   

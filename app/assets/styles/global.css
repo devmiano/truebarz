@@ -1,23 +1,23 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\000038}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\000038}}
 *, *::before, *::after {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px; }
 
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000325}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000325}}
   body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     margin: 0; }
 
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000331}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000331}}
     ul[role='list'], ol[role='list'] {
       list-style: none; }
 
-      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000338}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000338}}
       html:focus-within {
         scroll-behavior: smooth; }
 
-        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000343}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000343}}
         body {
           line-height: 1.5;
           color: #e8e5f1;
@@ -25,25 +25,25 @@
           background-color: #1f2041;
           text-rendering: optimizeSpeed; }
 
-          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000352}}
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000352}}
           a:not([class]) {
             text-decoration-skip-ink: auto; }
 
-            @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000358}}
+            @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000358}}
             img, picture {
               max-width: 100%;
               display: block; }
 
-              @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000367}}
+              @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000367}}
               input, button, textarea, select {
                 font: inherit; }
 
-                @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000372}}
+                @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000372}}
                 @media (prefers-reduced-motion: reduce) {
-                  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000372}}
+                  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000372}}
                   html:focus-within {
                     scroll-behavior: auto;   }
-                    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000378}}
+                    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000378}}
                     *, *::before, *::after {
                       animation-duration: 0.01ms !important;
                       animation-iteration-count: 1 !important;
@@ -51,37 +51,37 @@
                       scroll-behavior: auto !important;   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000389}}
 ::-webkit-scrollbar {
   width: 0.4rem;
   border-radius: 5rem; }
 
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000394}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000394}}
   ::-webkit-scrollbar-track {
     background: #1f2041; }
 
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000398}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\0000398}}
     ::-webkit-scrollbar-thumb {
       background: #ffd131;
       border-radius: 5rem;
       margin: 0.2rem; }
 
-      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\00003104}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\00003104}}
       ::-webkit-scrollbar-thumb:hover {
         background: #f4ac32; }
 
-        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\00003109}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/base\/_reset\.scss}line{font-family:\00003109}}
         input:-webkit-autofill, input:-webkit-autofill:focus {
           font: inherit;
           transition: background-color 600000s 0s, color 600000s 0s; }
 
-          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\000037}}
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_main\.scss}line{font-family:\000037}}
           #app {
             min-height: 100vh;
             display: flex;
             flex-direction: column; }
 
-            @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_hero\.scss}line{font-family:\0000312}}
+            @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_hero\.scss}line{font-family:\0000312}}
             #hero {
               height: 100vh;
               background-size: cover;
@@ -89,7 +89,7 @@
               background-repeat: no-repeat;
               padding: 2rem;
               background-image: url('/assets/images/hero.png'); }
-              @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_hero\.scss}line{font-family:\0000317}}
+              @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_hero\.scss}line{font-family:\0000317}}
               #hero .content {
                 height: 100%;
                 display: flex;
@@ -98,21 +98,21 @@
                 justify-content: center;
                 padding-bottom: 2rem;
                 justify-content: flex-end; }
-                @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_hero\.scss}line{font-family:\0000322}}
+                @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_hero\.scss}line{font-family:\0000322}}
                 #hero .content .title {
                   line-height: 1;
                   font-weight: 400;
                   font-size: 3.2rem;
                   font-family: 'Outfit', sans-serif;
                   color: #e8e5f1; }
-                  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_hero\.scss}line{font-family:\0000326}}
+                  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_hero\.scss}line{font-family:\0000326}}
                   #hero .content .text {
                     margin: 1rem 0;
                     color: #ffd131;
                     font-weight: 200;
                     font-size: 1.7rem;
                     font-family: 'Outfit', sans-serif; }
-                    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_hero\.scss}line{font-family:\0000332}}
+                    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_hero\.scss}line{font-family:\0000332}}
                     #hero .content .btn {
                       border: none;
                       outline: none;
@@ -127,27 +127,38 @@
                       font-family: 'Outfit', sans-serif;
                       letter-spacing: 0.05rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_cards\.scss}line{font-family:\0000314}}
-#radio-card, #artist-card {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 0.2rem; }
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_cards\.scss}line{font-family:\0000315}}
-  #radio-card .icon, #artist-card .icon {
-    width: 4rem;
-    height: 4rem; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_cards\.scss}line{font-family:\0000318}}
-    #radio-card .text, #artist-card .text {
-      font-size: 1rem;
-      font-weight: 400;
-      font-family: 'Outfit', sans-serif;
-      letter-spacing: 0.05rem;
-      font-weight: 200; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_cards\.scss}line{font-family:\0000313}}
+#radio-card {
+  opacity: 0.7;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: #35305a; }
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_cards\.scss}line{font-family:\0000318}}
+  #radio-card .content {
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.2rem; }
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_cards\.scss}line{font-family:\0000322}}
+    #radio-card .content .icon {
+      width: 4rem;
+      height: 4rem; }
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_cards\.scss}line{font-family:\0000325}}
+      #radio-card .content .text {
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: 'Outfit', sans-serif;
+        letter-spacing: 0.05rem;
+        font-weight: 200;
+        color: #e8e5f1;
+        text-align: center;
+        text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_cards\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_cards\.scss}line{font-family:\0000337}}
 #lyric-card {
+  text-decoration: none;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -155,23 +166,23 @@
   margin: 0.5rem 0;
   border-radius: 0.2rem;
   background-color: #35305a; }
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_cards\.scss}line{font-family:\0000330}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_cards\.scss}line{font-family:\0000342}}
   #lyric-card .icon {
     height: 7rem; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_cards\.scss}line{font-family:\0000333}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_cards\.scss}line{font-family:\0000345}}
     #lyric-card .content {
       padding: 1rem;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: center; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_cards\.scss}line{font-family:\0000335}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_cards\.scss}line{font-family:\0000347}}
       #lyric-card .content .name {
         font-weight: 400;
         font-size: 1.3rem;
         font-family: 'Outfit', sans-serif;
         letter-spacing: 0.05rem; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_cards\.scss}line{font-family:\0000338}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_cards\.scss}line{font-family:\0000350}}
         #lyric-card .content .song {
           font-size: 1rem;
           font-weight: 400;
@@ -180,7 +191,7 @@
           font-weight: 200;
           color: #ffd131; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000314}}
 #login {
   height: 100vh;
   width: 100%;
@@ -189,7 +200,7 @@
   background-repeat: no-repeat;
   padding: 5rem 2rem;
   background-image: url('/assets/images/login.png'); }
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000320}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000320}}
   #login .login {
     width: 60%;
     float: right;
@@ -197,13 +208,13 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000324}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000324}}
     #login .login .title {
       line-height: 1;
       font-weight: 400;
       font-size: 3.2rem;
       font-family: 'Outfit', sans-serif; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000328}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000328}}
       #login .login .form {
         display: flex;
         flex-direction: column;
@@ -211,7 +222,7 @@
         justify-content: center;
         width: 80%;
         margin: 2rem 0; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000332}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000332}}
         #login .login .form .input {
           width: 80%;
           outline: none;
@@ -226,23 +237,23 @@
           font-weight: 400;
           font-family: 'Outfit', sans-serif;
           letter-spacing: 0.05rem; }
-          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000342}}
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000342}}
           #login .login .form .input::placeholder {
             color: #ffd131;
             background: transparent; }
-            @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000346}}
+            @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000346}}
             #login .login .form .input:focus {
               color: #ffd131;
               background: transparent; }
-              @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000350}}
+              @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000350}}
               #login .login .form .input:active {
                 color: #ffd131;
                 background: transparent; }
-                @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000354}}
+                @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000354}}
                 #login .login .form .input:focus-visible {
                   color: #ffd131;
                   background: transparent; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000337}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000337}}
         #login .login .form .btn {
           width: 80%;
           margin: 0.5rem 0;
@@ -255,7 +266,7 @@
           border-radius: 0.2rem;
           text-transform: uppercase; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000348}}
 #signup {
   height: 100vh;
   width: 100%;
@@ -264,7 +275,7 @@
   background-repeat: no-repeat;
   padding: 5rem 2rem;
   background-image: url('/assets/images/signup.png'); }
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000354}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000354}}
   #signup .signup {
     width: 60%;
     float: right;
@@ -272,13 +283,13 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000358}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000358}}
     #signup .signup .title {
       line-height: 1;
       font-weight: 400;
       font-size: 3.2rem;
       font-family: 'Outfit', sans-serif; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000362}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000362}}
       #signup .signup .form {
         display: flex;
         flex-direction: column;
@@ -286,7 +297,7 @@
         justify-content: center;
         width: 80%;
         margin: 2rem 0; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000366}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000366}}
         #signup .signup .form .input {
           width: 80%;
           outline: none;
@@ -301,23 +312,23 @@
           font-weight: 400;
           font-family: 'Outfit', sans-serif;
           letter-spacing: 0.05rem; }
-          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000376}}
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000376}}
           #signup .signup .form .input::placeholder {
             color: #ffd131;
             background: transparent; }
-            @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000380}}
+            @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000380}}
             #signup .signup .form .input:focus {
               color: #ffd131;
               background: transparent; }
-              @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000384}}
+              @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000384}}
               #signup .signup .form .input:active {
                 color: #ffd131;
                 background: transparent; }
-                @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000388}}
+                @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000388}}
                 #signup .signup .form .input:focus-visible {
                   color: #ffd131;
                   background: transparent; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000371}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000371}}
         #signup .signup .form .btn {
           width: 80%;
           margin: 0.5rem 0;
@@ -330,7 +341,7 @@
           border-radius: 0.2rem;
           text-transform: uppercase; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000315}}
 #navbar {
   top: 0;
   width: 100%;
@@ -344,7 +355,7 @@
   align-items: center;
   justify-content: center;
   justify-content: space-between; }
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000325}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000325}}
   #navbar .left {
     gap: 1.2rem;
     display: flex;
@@ -352,21 +363,21 @@
     align-items: center;
     justify-content: center;
     justify-content: flex-start; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000328}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000328}}
     #navbar .left .link .icon {
       width: 2.7rem;
       height: 2.7rem; }
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000335}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000335}}
   #navbar .center .navbrand {
     text-decoration: none;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000338}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000338}}
     #navbar .center .navbrand .logo {
       height: 3.3rem; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000341}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000341}}
       #navbar .center .navbrand .text {
         font-size: 0.8rem;
         color: #ffd131;
@@ -375,7 +386,7 @@
         font-family: 'Outfit', sans-serif;
         letter-spacing: 0.2rem;
         text-transform: uppercase; }
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000348}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000348}}
   #navbar .right {
     gap: 1.2rem;
     display: flex;
@@ -383,7 +394,7 @@
     align-items: center;
     justify-content: center;
     justify-content: flex-end; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000351}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000351}}
     #navbar .right .link {
       gap: 0.5rem;
       text-decoration: none;
@@ -391,11 +402,11 @@
       flex-direction: row;
       align-items: center;
       justify-content: center; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000355}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000355}}
       #navbar .right .link .icon {
         width: 2.7rem;
         height: 2.7rem; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000358}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_navbar\.scss}line{font-family:\0000358}}
         #navbar .right .link .text {
           font-size: 1rem;
           font-weight: 400;
@@ -403,7 +414,7 @@
           letter-spacing: 0.05rem;
           color: #f4ac32; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_footer\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_footer\.scss}line{font-family:\0000316}}
 #footer {
   display: flex;
   flex-direction: row;
@@ -413,14 +424,14 @@
   width: 100%;
   height: 5rem;
   margin-top: auto; }
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_footer\.scss}line{font-family:\0000322}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_footer\.scss}line{font-family:\0000322}}
   #footer .text {
     font-size: 1rem;
     font-weight: 400;
     font-family: 'Outfit', sans-serif;
     letter-spacing: 0.05rem;
     color: #f4ac32; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_footer\.scss}line{font-family:\0000326}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_footer\.scss}line{font-family:\0000326}}
     #footer .copy {
       font-size: 1rem;
       font-weight: 400;
@@ -428,7 +439,7 @@
       letter-spacing: 0.05rem;
       color: #ffd131; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_profile\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_profile\.scss}line{font-family:\0000317}}
 #profile {
   height: 300vh;
   background-size: cover;
@@ -437,7 +448,7 @@
   padding: 2rem;
   background-image: url('/assets/images/hero.png'); }
 
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000318}}
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000318}}
   #categories {
     background-size: cover;
     background-position: bottom;
@@ -449,7 +460,7 @@
     width: 100%;
     padding: 2rem;
     background-image: url('/assets/images/category.png'); }
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000325}}
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000325}}
     #categories .radio, #categories .playlist, #categories .artist {
       width: 100%;
       padding: 2rem;
@@ -457,7 +468,7 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: center; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000327}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000327}}
       #categories .radio .header, #categories .playlist .header,
       #categories .artist .header {
         width: 100%;
@@ -466,7 +477,7 @@
         align-items: center;
         justify-content: center;
         justify-content: space-between; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000330}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000330}}
         #categories .radio .header .content .title,
         #categories .playlist .header .content .title,
         #categories .artist .header .content .title {
@@ -474,7 +485,7 @@
           font-weight: 400;
           font-size: 3.2rem;
           font-family: 'Outfit', sans-serif; }
-          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000333}}
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000333}}
           #categories .radio .header .content .text,
           #categories .playlist .header .content .text,
           #categories .artist .header .content .text {
@@ -483,7 +494,7 @@
             font-size: 1.7rem;
             font-family: 'Outfit', sans-serif;
             margin-left: 0.5rem; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000340}}
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000340}}
         #categories .radio .header .round, #categories .playlist .header .round,
         #categories .artist .header .round {
           text-decoration: none;
@@ -499,14 +510,14 @@
           background: transparent;
           text-transform: uppercase;
           border: 2px solid #f4ac32; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000347}}
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000347}}
       #categories .radio .cards, #categories .playlist .cards, #categories .artist .cards {
         width: 100%;
         padding: 4rem 2rem;
         gap: 1rem;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000352}}
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/personal\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\0000352}}
         #categories .radio .lyrics, #categories .playlist .lyrics,
         #categories .artist .lyrics {
           width: 50%;

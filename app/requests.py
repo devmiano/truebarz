@@ -37,12 +37,10 @@ def get_playlist():
     image_data = data.get('images')
    
     image = image_data['coverart']
-    print(image_data['coverart'])
 
     if data: 
       playlist_obj = Playlist(id=id,url=url,subtitle=subtitle,title=title,image=image)
       playlist_results.append(playlist_obj)
-      print(playlist_results)
   return playlist_results
 
 
@@ -56,7 +54,6 @@ def get_station():
 
   response = requests.request("GET", url, headers=headers, params=querystring)
 
-
   stations = json.loads(response.text)
 
   stations_by_name = []
@@ -67,7 +64,7 @@ def get_station():
     favicon = station.get('favicon')
     votes = station.get('votes')
 
-    if favicon:
+    if station:
       obj = Radio(name=name, url=url, favicon=favicon, votes=votes)
     
       stations_by_name.append(obj)
