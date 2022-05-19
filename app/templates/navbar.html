@@ -48,13 +48,29 @@
         alt="search"
       />
     </a>
-    <a class="link" href="#">
+    {% if current_user.is_authenticated %}
+    <a
+      class="link"
+      href="{{url_for('main.profile',uname=current_user.username)}}"
+    >
       <img
         class="icon"
         src="{{url_for('static', filename='icons/user.svg')}}"
         alt="user"
       />
-      <p class="text">user</p>
+
+      <p class="text">{{current_user.username}}</p>
     </a>
+    {% else %}
+    <a class="link" href="{{url_for('auth.login')}}">
+      <img
+        class="icon"
+        src="{{url_for('static', filename='icons/user.svg')}}"
+        alt="user"
+      />
+
+      <p class="text">login</p>
+    </a>
+    {% endif %}
   </div>
 </nav>
