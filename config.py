@@ -2,6 +2,9 @@ import os
 
 class Config:
   '''class to configure url parameters'''
+  # search
+  URL = "https://radio-browser.p.rapidapi.com/json/stations/search"
+  X_RAPIDAPI_KEY = os.environ.get('X_RAPIDAPI_KEY')
   PLAYLIST_API_BASE_URL = "https://shazam.p.rapidapi.com/songs/get-count"
   SECRET_KEY = os.environ.get('SECRET_KEY')
   PLAYLIST_API_KEY = os.environ.get('PLAYLIST_API_KEY')
@@ -21,7 +24,7 @@ class ProdConfig(Config):
 
 
 class DevConfig(Config):
-  SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://martin1:Password@localhost:5432/truebarz'
+  SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://devmiano:devmiano@localhost:5432/truebarz'
   DEBUG = True
   ASSETS_DEBUG = True
   

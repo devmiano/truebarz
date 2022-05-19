@@ -3,21 +3,19 @@ from flask_login import login_required, current_user
 from datetime import datetime as dt
 from ..models import User
 from .forms import UpdateProfile
-
-
-from ..requests import get_playlist
+from ..requests import get_playlist, get_station
 
 from .. import db,photos
 from . import main
 
 @main.route('/')
 def index():
-
+    stations = get_station() 
     playlist = get_playlist() 
     '''function that renders the homepage'''
-    title = 'The music App'
+    title = 'All in One Music App'
   
-    return render_template('index.html', title=title,playlist=playlist)
+    return render_template('index.html', title=title, playlist=playlist, stations=stations)
 
 @main.route('/user/<uname>')
 def profile(uname):

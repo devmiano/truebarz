@@ -37,6 +37,15 @@ class User(UserMixin, db.Model):
   def __repr__(self):
       return f'User {self.username}'
 
+
+class Radio(db.Model):
+  __tablename__ = 'radios'
+  
+  id = db.Column(db.Integer, primary_key=True)
+  name = db.Column(db.String(200))
+  url = db.Column(db.String(255))
+  favicon = db.Column(db.String(255))
+  votes = db.Column(db.Integer)
     
 class Playlist(db.Model):
 
@@ -51,6 +60,3 @@ class Playlist(db.Model):
 
   def __repr__(self):
         return f"Playlist('{self.url}')"
-
-
-    

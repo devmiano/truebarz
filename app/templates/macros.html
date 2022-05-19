@@ -1,3 +1,11 @@
+{% macro displaySources(source_list) %} {% for source in source_list %}
+<p>{{source.name}}</p>
+<p>{{source.url}}</p>
+<p>{{source.votes}}</p>
+<img src="{{source.favicon}}" alt="{{source.name}}" >
+
+{% endfor %} {% endmacro %}
+
 {% macro displaySourceList(playlist)%}
 {% for source in playlist %}
 
