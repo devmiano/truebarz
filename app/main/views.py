@@ -4,15 +4,20 @@ from datetime import datetime as dt
 from ..models import User
 from .forms import UpdateProfile
 
+
+from ..requests import get_playlist
+
 from .. import db,photos
 from . import main
 
 @main.route('/')
 def index():
+
+    playlist = get_playlist() 
     '''function that renders the homepage'''
     title = 'The music App'
   
-    return render_template('index.html', title=title)
+    return render_template('index.html', title=title,playlist=playlist)
 
 @main.route('/user/<uname>')
 def profile(uname):

@@ -8,6 +8,8 @@ from . import login_manager
 def load_user(user_id):
   return User.query.get(int(user_id))
 
+
+
 class User(UserMixin, db.Model):
   __tablename__ = 'users'
   
@@ -19,8 +21,8 @@ class User(UserMixin, db.Model):
   password_hash = db.Column(db.String(255))
   bio = db.Column(db.String(255))
   profile_pic_path = db.Column(db.String(255))
- 
-  
+  playlist = db.relationship('Playlist', backref='user', lazy='dynamic')
+
   @property
   def password(self):
     raise AttributeError('you cannot read the password')
@@ -34,6 +36,21 @@ class User(UserMixin, db.Model):
   
   def __repr__(self):
       return f'User {self.username}'
+
+    
+class Playlist(db.Model):
+
+  __tablename__ = 'playlist'
+
+  id = db.Column(db.Integer,primary_key=True)
+  url = db.Column(db.String(255))
+  subtitle = db.Column(db.String(255))
+  title = db.Column(db.String(255))
+  image = db.Column(db.String(255))
+  users_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+
+  def __repr__(self):
+        return f"Playlist('{self.url}')"
 
 
     

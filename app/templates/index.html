@@ -58,59 +58,18 @@
     </div>
   </section>
 
+  <div class="playlist">
+ {{macro.displaySourceList(playlist)}}
+  </div>
   <section class="playlist">
     <div class="header">
       <div class="content">
-        <h1 class="title">Trending Playlists</h1>
+        <h1 class="title">Trending Playlist</h1>
         <p class="text">from around the world</p>
       </div>
       <a class="round" href="#">view all</a>
     </div>
     <div class="lyrics">
-      <div id="lyric-card">
-        <img
-          class="icon"
-          src="{{url_for('static', filename='icons/user-music.svg')}}"
-          alt="lyric"
-        />
-        <div class="content">
-          <p class="name">Artist Name</p>
-          <p class="song">Song Title</p>
-        </div>
-      </div>
-      <div id="lyric-card">
-        <img
-          class="icon"
-          src="{{url_for('static', filename='icons/user-music.svg')}}"
-          alt="lyric"
-        />
-        <div class="content">
-          <p class="name">Artist Name</p>
-          <p class="song">Song Title</p>
-        </div>
-      </div>
-      <div id="lyric-card">
-        <img
-          class="icon"
-          src="{{url_for('static', filename='icons/user-music.svg')}}"
-          alt="lyric"
-        />
-        <div class="content">
-          <p class="name">Artist Name</p>
-          <p class="song">Song Title</p>
-        </div>
-      </div>
-      <div id="lyric-card">
-        <img
-          class="icon"
-          src="{{url_for('static', filename='icons/user-music.svg')}}"
-          alt="lyric"
-        />
-        <div class="content">
-          <p class="name">Artist Name</p>
-          <p class="song">Song Title</p>
-        </div>
-      </div>
     </div>
   </section>
 
