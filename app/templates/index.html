@@ -24,11 +24,9 @@
     </div>
     <div class="cards">
       <div id="radio-card">
-        <img
-          class="icon"
-          src="{{url_for('static', filename='icons/radio.svg')}}"
-          alt="radio"
-        />
+        {{macro.displaySources(stations)}}
+            
+       
         <p class="text">Radio station</p>
       </div>
       <div id="radio-card">

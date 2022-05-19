@@ -2,6 +2,9 @@ import os
 
 class Config:
   '''class to configure url parameters'''
+  # search
+  URL = "https://radio-browser.p.rapidapi.com/json/stations/search"
+  X_RAPIDAPI_KEY = os.environ.get('X_RAPIDAPI_KEY')
   SECRET_KEY = os.environ.get('SECRET_KEY')
   SQLALCHEMY_TRACK_MODIFICATIONS = False
   UPLOADED_PHOTOS_DEST ='app/assets/photos'
@@ -19,7 +22,7 @@ class ProdConfig(Config):
 
 
 class DevConfig(Config):
-  SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://devmiano:devmiano@localhost:5432/truebarz'
+  SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://hzkialo:1234@localhost:5432/truebarz'
   DEBUG = True
   ASSETS_DEBUG = True
   
