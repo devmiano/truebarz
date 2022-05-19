@@ -60,9 +60,10 @@
 }
 
 @mixin brandtext {
+  font-size: 0.8rem;
   color: $glow-100;
-  font-size: 1rem;
-  font-weight: 700;
+  margin: 0.2rem 0;
+  font-weight: 600;
   font-family: $font;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
@@ -120,8 +121,8 @@
 }
 
 @mixin navicon {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.7rem;
+  height: 2.7rem;
 }
 
 @mixin cardicon {
