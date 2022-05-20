@@ -239,80 +239,88 @@
           font-size: 0.8rem;
           color: #ffd131; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000314}}
-#login {
-  height: 100vh;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_cards\.scss}line{font-family:\0000399}}
+#cta {
+  text-decoration: none;
+  color: #ffd131;
   width: 100%;
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  padding: 5rem 2rem;
-  background-image: url('/assets/images/login.png'); }
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000320}}
-  #login .login {
-    width: 60%;
-    float: right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center; }
-    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000324}}
-    #login .login .title {
-      line-height: 1;
-      font-weight: 400;
-      font-size: 3.2rem;
-      font-family: 'Outfit', sans-serif; }
-      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000328}}
-      #login .login .form {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        width: 80%;
-        margin: 2rem 0; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000332}}
-        #login .login .form .input {
+  text-align: center;
+  font-size: 1.1rem; }
+
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000314}}
+  #login {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 5rem 2rem;
+    background-image: url('/assets/images/login.png'); }
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000320}}
+    #login .login {
+      width: 60%;
+      float: right;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center; }
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000324}}
+      #login .login .title {
+        line-height: 1;
+        font-weight: 400;
+        font-size: 3.2rem;
+        font-family: 'Outfit', sans-serif; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000328}}
+        #login .login .form {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
           width: 80%;
-          outline: none;
-          font-size: 1rem;
-          padding: 0.7rem;
-          margin: 0.5rem 0;
-          color: #e8e5f1;
-          border-radius: 0.4rem;
-          background: transparent;
-          border: 2px solid #ffd131;
-          font-size: 1rem;
-          font-weight: 400;
-          font-family: 'Outfit', sans-serif;
-          letter-spacing: 0.05rem; }
-          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000342}}
-          #login .login .form .input::placeholder {
-            color: #ffd131;
-            background: transparent; }
-            @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000346}}
-            #login .login .form .input:focus {
+          margin: 2rem 0; }
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000332}}
+          #login .login .form .input {
+            width: 80%;
+            outline: none;
+            font-size: 1rem;
+            padding: 0.7rem;
+            margin: 0.5rem 0;
+            color: #e8e5f1;
+            border-radius: 0.4rem;
+            background: transparent;
+            border: 2px solid #ffd131;
+            font-size: 1rem;
+            font-weight: 400;
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: 0.05rem; }
+            @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000342}}
+            #login .login .form .input::placeholder {
               color: #ffd131;
               background: transparent; }
-              @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000350}}
-              #login .login .form .input:active {
+              @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000346}}
+              #login .login .form .input:focus {
                 color: #ffd131;
                 background: transparent; }
-                @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000354}}
-                #login .login .form .input:focus-visible {
+                @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000350}}
+                #login .login .form .input:active {
                   color: #ffd131;
                   background: transparent; }
-        @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000337}}
-        #login .login .form .btn {
-          width: 80%;
-          margin: 0.5rem 0;
-          border: none;
-          outline: none;
-          cursor: pointer;
-          color: #35305a;
-          background: linear-gradient(91.47deg, #ffd131 8.81%, #f4ac32 94.74%);
-          padding: 1rem 2rem;
-          border-radius: 0.2rem;
-          text-transform: uppercase; }
+                  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000354}}
+                  #login .login .form .input:focus-visible {
+                    color: #ffd131;
+                    background: transparent; }
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000337}}
+          #login .login .form .btn {
+            width: 80%;
+            margin: 0.5rem 0;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            color: #35305a;
+            background: linear-gradient(91.47deg, #ffd131 8.81%, #f4ac32 94.74%);
+            padding: 1rem 2rem;
+            border-radius: 0.2rem;
+            text-transform: uppercase; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_forms\.scss}line{font-family:\0000348}}
 #signup {
@@ -489,7 +497,7 @@
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_profile\.scss}line{font-family:\0000317}}
 #profile {
-  height: 300vh;
+  height: 100vh;
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -788,7 +796,7 @@
           flex-direction: column;
           justify-content: center;
           border-radius: 0.2rem;
-          background-color: #5f5091; }
+          background-color: linear-gradient(0deg, #1f2041, rgba(53, 48, 90, 0)); }
           @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/devmiano\/builds\/moringa\/truebarz\/app\/assets\/sass\/styles\/_categories\.scss}line{font-family:\00003225}}
           #profile .head .left .user .image {
             background-position: center;

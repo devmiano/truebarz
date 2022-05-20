@@ -87,3 +87,11 @@
     }
   }
 }
+
+#cta {
+  @include link;
+  color: $glow-100;
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+}
