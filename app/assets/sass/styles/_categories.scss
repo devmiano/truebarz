@@ -7,8 +7,8 @@
   @include col-start;
   width: 100%;
   padding: 2rem;
-  background-image: url('/assets/images/category.png');
-  .radio,
+  background-image: url('/assets/images/cover-five.png');
+
   .playlist,
   .artist {
     width: 100%;
@@ -41,8 +41,272 @@
       @include grid-column;
     }
     .lyrics {
-      width: 50%;
+      width: 100%;
       padding: 4rem 2rem;
+      @include grid-two;
+    }
+    .charts {
+      gap: 1rem;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+      padding: 4rem 2rem;
+      flex-direction: row;
+      border-radius: 0.2rem;
+      align-items: flex-start;
+      justify-content: flex-start;
     }
   }
+}
+
+#collections {
+  @include image;
+  @include col-start;
+
+  width: 100%;
+  background-image: url('/assets/images/cover-four.png');
+
+  .playlist,
+  .artist {
+    width: 100%;
+    padding: 2rem;
+    @include col-start;
+    margin-top: 10rem;
+
+    .header {
+      width: 100%;
+      @include row-center;
+      justify-content: space-between;
+      .content {
+        .title {
+          @include title;
+        }
+        .text {
+          color: $glow-100;
+          @include subtitle;
+          margin-left: 0.5rem;
+        }
+      }
+      .round {
+        @include link;
+        font-size: 0.8rem;
+        @include btn-round;
+      }
+    }
+    .cards {
+      width: 100%;
+      padding: 4rem 2rem;
+      @include grid-column;
+    }
+    .lyrics {
+      width: 100%;
+      padding: 4rem 2rem;
+      @include grid-two;
+    }
+    .charts {
+      gap: 1rem;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+      padding: 4rem 2rem;
+      flex-direction: row;
+      border-radius: 0.2rem;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+}
+
+#trending {
+  @include image;
+  @include col-start;
+  width: 100%;
+  background-image: url('/assets/images/cover-three.png');
+
+  .playlist,
+  .artist {
+    width: 100%;
+    padding: 2rem;
+    @include col-start;
+    margin-top: 10rem;
+
+    .header {
+      width: 100%;
+      @include row-center;
+      justify-content: space-between;
+      .content {
+        .title {
+          @include title;
+        }
+        .text {
+          color: $glow-100;
+          @include subtitle;
+          margin-left: 0.5rem;
+        }
+      }
+      .round {
+        @include link;
+        font-size: 0.8rem;
+        @include btn-round;
+      }
+    }
+    .cards {
+      width: 100%;
+      padding: 4rem 2rem;
+      @include grid-column;
+    }
+    .lyrics {
+      width: 100%;
+      padding: 4rem 2rem;
+      @include grid-two;
+    }
+    .charts {
+      gap: 1rem;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+      padding: 4rem 2rem;
+      flex-direction: row;
+      border-radius: 0.2rem;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  .head {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: transparent;
+    border-radius: 0.25rem;
+
+    .left {
+      display: flex;
+      align-items: flex-end;
+      .user {
+        display: flex;
+        padding: 1rem;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0.2rem;
+        background-color: $dark-200;
+
+        .image {
+          background-position: center;
+          background-size: cover;
+          height: 11rem;
+          width: 11rem;
+          border-radius: 15rem;
+        }
+        .username {
+          @include pitch-date;
+          color: $glow-200;
+          font-weight: 500;
+          font-size: 1rem;
+        }
+        .email {
+          @include pitch-date;
+          color: $light-100;
+        }
+        .form {
+          margin-top: 1rem;
+          font-size: inherit;
+
+          input[type='file' i] {
+            appearance: none;
+            background-color: initial;
+            cursor: pointer;
+            align-items: baseline;
+            color: $glow-100;
+            text-overflow: ellipsis;
+            font-size: 0.8rem;
+            text-align: start !important;
+            border: none;
+            padding: 0.2rem;
+            overflow: hidden !important;
+          }
+
+          input[type='submit' i] {
+            border: none;
+            font-family: $font;
+            font-size: 0.9rem;
+            font-weight: 200;
+            letter-spacing: 0.05rem;
+            outline: none;
+            color: $glow-100;
+            background-color: $dark-400;
+            padding: 0.3rem 0.8rem;
+            border-radius: 0.2rem;
+            cursor: pointer;
+          }
+        }
+      }
+      .bio {
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+
+        h1 {
+          font-family: $font;
+          font-size: 2.4rem;
+          color: $light-100;
+          text-transform: uppercase;
+          letter-spacing: 0.05rem;
+        }
+        p {
+          width: 80%;
+          font-family: $font;
+          font-size: 1.1rem;
+          font-weight: 200;
+          color: $glow-200;
+          letter-spacing: 0.05rem;
+        }
+      }
+    }
+    .link {
+      padding: 0.2rem;
+
+      a {
+        @include pitch-date;
+        color: $glow-100;
+        font-family: $font;
+        font-size: 0.9rem;
+        letter-spacing: 0.05rem;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        border-radius: 0.2rem;
+        background-color: $glow-100;
+      }
+    }
+  }
+}
+
+.msg-text {
+  font-family: $font;
+  font-size: 1.1rem;
+  font-weight: 200;
+  letter-spacing: 0.05rem;
+  margin-left: 3rem;
 }

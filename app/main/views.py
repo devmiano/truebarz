@@ -3,22 +3,51 @@ from flask_login import login_required, current_user
 from datetime import datetime as dt
 from ..models import User
 from .forms import UpdateProfile
-from ..requests import get_charts, get_playlist, get_station, search_music
+from ..requests import get_afrobeats, get_blues, get_charts, get_dancehall, get_latin, get_playlist, get_pop, get_rock, get_station, get_world, search_music
 
 from .. import db,photos
 from . import main
 
 @main.route('/')
 def index():
-  stations = get_station()
+  # stations = get_station()
   playlist = get_playlist()
   charts = get_charts()
+  world = get_world()
+  pop = get_pop()
   '''function that renders the homepage'''
   title = 'All in One Music App'
   
   
 
-  return render_template('index.html', title=title, playlist=playlist, stations=stations, charts=charts)
+  return render_template('index.html', title=title, playlist=playlist, charts=charts, world=world, pop=pop)
+
+@main.route('/trending')
+def trending():
+  afrobeats = get_afrobeats()
+  blues = get_blues()
+  pop = get_pop()
+  world = get_world()
+  '''function that renders the homepage'''
+  title = 'All in One Music App'
+
+
+
+  return render_template('trending.html', title=title, afrobeats=afrobeats, pop=pop, blues=blues, world=world,)
+
+@main.route('/collections')
+def collections():
+  dancehall = get_dancehall()
+  latin = get_latin()
+  rock = get_rock()
+  afrobeats = get_afrobeats()
+  
+  '''function that renders the homepage'''
+  title = 'All in One Music App'
+  
+  
+
+  return render_template('collections.html', title=title,  dancehall=dancehall, latin=latin, rock=rock, afrobeats=afrobeats)
 
 @main.route('/user/<uname>')
 def profile(uname):
@@ -69,7 +98,7 @@ def find():
     return redirect(url_for('main.search', query=search_music, title=title))
   
   else:
-    return render_template('search.html')
+    return render_template('find.html')
   
   
   

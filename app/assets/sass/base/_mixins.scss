@@ -32,6 +32,22 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+@mixin grid-two {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@mixin grid-three {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@mixin grid-four {
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 @mixin title {
   line-height: 1;
   font-weight: 400;
@@ -138,4 +154,10 @@
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+}
+
+@mixin pitch-date {
+  color: $light-100;
+  font-size: 0.8rem;
+  font-family: $font;
 }

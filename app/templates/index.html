@@ -17,17 +17,17 @@
   <section class="playlist">
     <div class="header">
       <div class="content">
-        <h1 class="title">Trending Playlist</h1>
-        <p class="text">from around the world</p>
+        <h1 class="title">Trending today</h1>
+        <p class="text">curated just for you</p>
       </div>
       <a class="round" href="#">view all</a>
     </div>
-    <div class="lyrics">{{macro.displaySourceList(playlist)}}</div>
+    <div class="charts">{{macro.displayCharts(world)}}</div>
   </section>
   <section class="playlist">
     <div class="header">
       <div class="content">
-        <h1 class="title">Trending Playlist</h1>
+        <h1 class="title">Todays Playlist</h1>
         <p class="text">from around the world</p>
       </div>
       <a class="round" href="#">view all</a>
@@ -35,7 +35,8 @@
     <div class="lyrics">{{macro.displaySourceList(charts)}}</div>
   </section>
 </div>
-<div id="categories">
+
+<!-- <div id="categories">
   <section class="radio">
     <div class="header">
       <div class="content">
@@ -46,8 +47,18 @@
     </div>
     <div class="cards">{{macro.displaySources(main_stations)}}</div>
   </section>
-</div>
+</div> -->
 <div id="categories">
+  <section class="playlist">
+    <div class="header">
+      <div class="content">
+        <h1 class="title">Pop hitlist</h1>
+        <p class="text">From the world of pop</p>
+      </div>
+      <a class="round" href="#">view all</a>
+    </div>
+    <div class="charts">{{macro.displayCharts(pop)}}</div>
+  </section>
   <section class="artist">
     <div class="header">
       <div class="content">
@@ -56,7 +67,7 @@
       </div>
       <a class="round" href="#">view all</a>
     </div>
-    <div class="cards"></div>
+    <div class="lyrics">{{macro.displaySourceList(playlist)}}</div>
   </section>
 </div>
 

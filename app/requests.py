@@ -83,28 +83,27 @@ def search_music(query):
   res = conn.getresponse()
   data = res.read()
   results = data.decode("utf-8")
-  hits = results[0][0]
   search_hits = []
+  print(results[0:][0:][1:])
   
-  for hit in hits:
-    id = hit.get('id')
-    url = hit.get('url')
-    subtitle = hit.get('subtitle')
-    title = hit.get('title')
-    image_data = data.get('images')
+  # for hit in hits:
+  #   url = hit.get('url')
+  #   subtitle = hit.get('subtitle')
+  #   title = hit.get('title')
+  #   image_data = data.get('images')
    
-    image = image_data['background']
+  #   image = image_data['background']
 
-    if hit: 
-      hit_obj = Chart(id=id,url=url,subtitle=subtitle,title=title,image=image)
-      search_hits.append(hit_obj)
-      return search_hits
+  #   if hit: 
+  #     hit_obj = Chart(url=url,subtitle=subtitle,title=title,image=image)
+  #     search_hits.append(hit_obj)
+  #     return search_hits
 
 
 def get_charts():
   url = "https://shazam.p.rapidapi.com/charts/track"
 
-  querystring = {"locale":"en-US","pageSize":"20","startFrom":"0"}
+  querystring = {"locale":"en-US","pageSize":"8","startFrom":"0"}
 
   headers = {
     "X-RapidAPI-Host": "shazam.p.rapidapi.com",
@@ -135,7 +134,7 @@ def get_charts():
 def get_dancehall():
   url = "https://shazam.p.rapidapi.com/charts/track"
 
-  querystring = {"locale":"en-US","listId":"genre-global-chart-13","pageSize":"20","startFrom":"0"}
+  querystring = {"locale":"en-US","listId":"genre-global-chart-13","pageSize":"12","startFrom":"0"}
 
   headers = {
     "X-RapidAPI-Host": "shazam.p.rapidapi.com",
@@ -165,7 +164,7 @@ def get_dancehall():
 def get_world():
   url = "https://shazam.p.rapidapi.com/charts/track"
 
-  querystring = {"locale":"en-US","listId":"genre-global-chart-12","pageSize":"20","startFrom":"0"}
+  querystring = {"locale":"en-US","listId":"genre-global-chart-12","pageSize":"8","startFrom":"0"}
 
   headers = {
     "X-RapidAPI-Host": "shazam.p.rapidapi.com",
@@ -196,7 +195,7 @@ def get_world():
 def get_afrobeats():
   url = "https://shazam.p.rapidapi.com/charts/track"
 
-  querystring = {"locale":"en-US","listId":"genre-global-chart-11","pageSize":"20","startFrom":"0"}
+  querystring = {"locale":"en-US","listId":"genre-global-chart-11","pageSize":"12","startFrom":"0"}
 
   headers = {
     "X-RapidAPI-Host": "shazam.p.rapidapi.com",
@@ -227,7 +226,7 @@ def get_afrobeats():
 def get_latin():
   url = "https://shazam.p.rapidapi.com/charts/track"
 
-  querystring = {"locale":"en-US","listId":"genre-global-chart-8","pageSize":"20","startFrom":"0"}
+  querystring = {"locale":"en-US","listId":"genre-global-chart-8","pageSize":"12","startFrom":"0"}
 
   headers = {
     "X-RapidAPI-Host": "shazam.p.rapidapi.com",
@@ -258,7 +257,7 @@ def get_latin():
 def get_rock():
   url = "https://shazam.p.rapidapi.com/charts/track"
 
-  querystring = {"locale":"en-US","listId":"genre-global-chart-7","pageSize":"20","startFrom":"0"}
+  querystring = {"locale":"en-US","listId":"genre-global-chart-7","pageSize":"12","startFrom":"0"}
 
   headers = {
     "X-RapidAPI-Host": "shazam.p.rapidapi.com",
@@ -289,7 +288,7 @@ def get_rock():
 def get_blues():
   url = "https://shazam.p.rapidapi.com/charts/track"
 
-  querystring = {"locale":"en-US","listId":"genre-global-chart-5","pageSize":"20","startFrom":"0"}
+  querystring = {"locale":"en-US","listId":"genre-global-chart-5","pageSize":"12","startFrom":"0"}
 
   headers = {
     "X-RapidAPI-Host": "shazam.p.rapidapi.com",
@@ -322,7 +321,7 @@ def get_pop():
   
   test = 1
 
-  querystring = {"locale":"en-US","listId":"genre-global-chart-1","pageSize":"20","startFrom":"0"}
+  querystring = {"locale":"en-US","listId":"genre-global-chart-1","pageSize":"8","startFrom":"0"}
 
   headers = {
     "X-RapidAPI-Host": "shazam.p.rapidapi.com",

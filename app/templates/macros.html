@@ -16,12 +16,21 @@
 {% endfor %} {% endmacro %} {% macro displaySourceList(playlist)%} {% for source
 in playlist %}
 
-<div id="lyric-card">
+<a id="lyric-card" href="{{source.url}}">
   <img class="icon" src="{{source.image}}" alt="image" />
   <div class="content">
-    <p class="name">{{source.url}}</p>
+    <p class="name">{{source.title}}</p>
     <p class="song">{{source.subtitle}}</p>
-    <p>{{source.title}}</p>
   </div>
-</div>
+</a>
+{% endfor %} {% endmacro %} {% macro displayCharts(playlist)%} {% for source in
+playlist %}
+
+<a id="chart-card" href="{{source.url}}">
+  <img class="icon" src="{{source.image}}" alt="image" />
+  <div class="content">
+    <p class="name">{{source.title}}</p>
+    <p class="song">{{source.subtitle}}</p>
+  </div>
+</a>
 {% endfor %} {% endmacro %}
