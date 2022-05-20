@@ -41,13 +41,16 @@
         alt="audio"
       />
     </a>
-    <a class="link" href="#">
-      <img
-        class="icon"
-        src="{{url_for('static', filename='icons/search.svg')}}"
-        alt="search"
-      />
-    </a>
+    <form>
+      <input type="text" name="query" placeholder="search..." />
+      <button type="submit">
+        <img
+          class="icon"
+          src="{{url_for('static', filename='icons/search.svg')}}"
+          alt="search"
+        />
+      </button>
+    </form>
     {% if current_user.is_authenticated %}
     <a
       class="link"

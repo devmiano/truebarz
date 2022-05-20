@@ -1,4 +1,5 @@
 import urllib.request
+import http.client
 import requests
 import json
 from .models import Playlist, Radio
@@ -71,4 +72,22 @@ def get_station():
 
   return stations_by_name
 
+
+def search_music(query):
+  conn = http.client.HTTPSConnection("shazam.p.rapidapi.com")
+
+  headers = {
+      'X-RapidAPI-Host': "shazam.p.rapidapi.com",
+      'X-RapidAPI-Key': "f1ecc09012msh395fade747664ecp14465djsn59429cc15c85"
+      }
+  shazam_search_url= "/search?term={}&locale=en-US&offset=0&limit=5".format(query)
+  conn.request("GET", shazam_search_url, headers=headers)
+
+  res = conn.getresponse()
+  data = res.read()
+  results = data.decode("utf-8")
+  hits = results[0][0]
+  hits_list = []
+    
+  print(hits)
 
