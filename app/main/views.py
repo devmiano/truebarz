@@ -23,6 +23,7 @@ def index():
   return render_template('index.html', title=title, playlist=playlist, charts=charts, world=world, pop=pop)
 
 @main.route('/trending')
+@login_required
 def trending():
   afrobeats = get_afrobeats()
   blues = get_blues()
@@ -36,6 +37,7 @@ def trending():
   return render_template('trending.html', title=title, afrobeats=afrobeats, pop=pop, blues=blues, world=world,)
 
 @main.route('/collections')
+@login_required
 def collections():
   dancehall = get_dancehall()
   latin = get_latin()
@@ -91,6 +93,7 @@ def update_pic(uname):
 
 
 @main.route('/search')
+@login_required
 def find():
   title = 'Search'
   search_music = request.args.get('query')
@@ -103,6 +106,7 @@ def find():
   
   
 @main.route('/search/<query>')
+@login_required
 def search(query):
 	query_list = query.split(' ')
 	query_format = "+".join(query_list)
