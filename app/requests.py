@@ -2,7 +2,7 @@ import urllib.request
 import http.client
 import requests
 import json
-from .models import Playlist, Radio
+from .models import Chart, Playlist, Radio
 
 secret_key = None
 api_key = None
@@ -74,12 +74,9 @@ def get_station():
 
 
 def search_music(query):
+  hits_list = []
   conn = http.client.HTTPSConnection("shazam.p.rapidapi.com")
-
-  headers = {
-      'X-RapidAPI-Host': "shazam.p.rapidapi.com",
-      'X-RapidAPI-Key': "f1ecc09012msh395fade747664ecp14465djsn59429cc15c85"
-      }
+  headers = {'X-RapidAPI-Host': "shazam.p.rapidapi.com", 'X-RapidAPI-Key': "f1ecc09012msh395fade747664ecp14465djsn59429cc15c85"}
   shazam_search_url= "/search?term={}&locale=en-US&offset=0&limit=5".format(query)
   conn.request("GET", shazam_search_url, headers=headers)
 
@@ -87,7 +84,267 @@ def search_music(query):
   data = res.read()
   results = data.decode("utf-8")
   hits = results[0][0]
-  hits_list = []
-    
-  print(hits)
+  search_hits = []
+  
+  for hit in hits:
+    id = hit.get('id')
+    url = hit.get('url')
+    subtitle = hit.get('subtitle')
+    title = hit.get('title')
+    image_data = data.get('images')
+   
+    image = image_data['background']
 
+    if hit: 
+      hit_obj = Chart(id=id,url=url,subtitle=subtitle,title=title,image=image)
+      search_hits.append(hit_obj)
+      return search_hits
+
+
+def get_charts():
+  url = "https://shazam.p.rapidapi.com/charts/track"
+
+  querystring = {"locale":"en-US","pageSize":"20","startFrom":"0"}
+
+  headers = {
+    "X-RapidAPI-Host": "shazam.p.rapidapi.com",
+    "X-RapidAPI-Key": "f1ecc09012msh395fade747664ecp14465djsn59429cc15c85"
+  }
+
+  response = requests.request("GET", url, headers=headers, params=querystring)
+
+  results= json.loads(response.text)
+  datas = results["tracks"]
+
+  chart_results = []
+  for data in datas:
+    id = data.get('key')
+    url = data.get('url')
+    subtitle = data.get('subtitle')
+    title = data.get('title')
+    image_data = data.get('images')
+   
+    image = image_data['background']
+
+    if data: 
+      playlist_obj = Chart(id=id,url=url,subtitle=subtitle,title=title,image=image)
+      chart_results.append(playlist_obj)
+  return chart_results
+
+
+def get_dancehall():
+  url = "https://shazam.p.rapidapi.com/charts/track"
+
+  querystring = {"locale":"en-US","listId":"genre-global-chart-13","pageSize":"20","startFrom":"0"}
+
+  headers = {
+    "X-RapidAPI-Host": "shazam.p.rapidapi.com",
+    "X-RapidAPI-Key": "f1ecc09012msh395fade747664ecp14465djsn59429cc15c85"
+  }
+
+  response = requests.request("GET", url, headers=headers, params=querystring)
+
+  results= json.loads(response.text)
+  datas = results["tracks"]
+
+  dancehall_results = []
+  for data in datas:
+    id = data.get('key')
+    url = data.get('url')
+    subtitle = data.get('subtitle')
+    title = data.get('title')
+    image_data = data.get('images')
+   
+    image = image_data['background']
+
+    if data: 
+      playlist_obj = Chart(id=id,url=url,subtitle=subtitle,title=title,image=image)
+      dancehall_results.append(playlist_obj)
+  return dancehall_results
+
+def get_world():
+  url = "https://shazam.p.rapidapi.com/charts/track"
+
+  querystring = {"locale":"en-US","listId":"genre-global-chart-12","pageSize":"20","startFrom":"0"}
+
+  headers = {
+    "X-RapidAPI-Host": "shazam.p.rapidapi.com",
+    "X-RapidAPI-Key": "f1ecc09012msh395fade747664ecp14465djsn59429cc15c85"
+  }
+
+  response = requests.request("GET", url, headers=headers, params=querystring)
+
+  results= json.loads(response.text)
+  datas = results["tracks"]
+
+  world_results = []
+  for data in datas:
+    id = data.get('key')
+    url = data.get('url')
+    subtitle = data.get('subtitle')
+    title = data.get('title')
+    image_data = data.get('images')
+   
+    image = image_data['background']
+
+    if data: 
+      playlist_obj = Chart(id=id,url=url,subtitle=subtitle,title=title,image=image)
+      world_results.append(playlist_obj)
+  return world_results
+
+
+def get_afrobeats():
+  url = "https://shazam.p.rapidapi.com/charts/track"
+
+  querystring = {"locale":"en-US","listId":"genre-global-chart-11","pageSize":"20","startFrom":"0"}
+
+  headers = {
+    "X-RapidAPI-Host": "shazam.p.rapidapi.com",
+    "X-RapidAPI-Key": "f1ecc09012msh395fade747664ecp14465djsn59429cc15c85"
+  }
+
+  response = requests.request("GET", url, headers=headers, params=querystring)
+
+  results= json.loads(response.text)
+  datas = results["tracks"]
+
+  world_results = []
+  for data in datas:
+    id = data.get('key')
+    url = data.get('url')
+    subtitle = data.get('subtitle')
+    title = data.get('title')
+    image_data = data.get('images')
+   
+    image = image_data['background']
+
+    if data: 
+      playlist_obj = Chart(id=id,url=url,subtitle=subtitle,title=title,image=image)
+      world_results.append(playlist_obj)
+  return world_results
+
+
+def get_latin():
+  url = "https://shazam.p.rapidapi.com/charts/track"
+
+  querystring = {"locale":"en-US","listId":"genre-global-chart-8","pageSize":"20","startFrom":"0"}
+
+  headers = {
+    "X-RapidAPI-Host": "shazam.p.rapidapi.com",
+    "X-RapidAPI-Key": "f1ecc09012msh395fade747664ecp14465djsn59429cc15c85"
+  }
+
+  response = requests.request("GET", url, headers=headers, params=querystring)
+
+  results= json.loads(response.text)
+  datas = results["tracks"]
+
+  world_results = []
+  for data in datas:
+    id = data.get('key')
+    url = data.get('url')
+    subtitle = data.get('subtitle')
+    title = data.get('title')
+    image_data = data.get('images')
+   
+    image = image_data['background']
+
+    if data: 
+      playlist_obj = Chart(id=id,url=url,subtitle=subtitle,title=title,image=image)
+      world_results.append(playlist_obj)
+  return world_results
+
+
+def get_rock():
+  url = "https://shazam.p.rapidapi.com/charts/track"
+
+  querystring = {"locale":"en-US","listId":"genre-global-chart-7","pageSize":"20","startFrom":"0"}
+
+  headers = {
+    "X-RapidAPI-Host": "shazam.p.rapidapi.com",
+    "X-RapidAPI-Key": "f1ecc09012msh395fade747664ecp14465djsn59429cc15c85"
+  }
+
+  response = requests.request("GET", url, headers=headers, params=querystring)
+
+  results= json.loads(response.text)
+  datas = results["tracks"]
+
+  world_results = []
+  for data in datas:
+    id = data.get('key')
+    url = data.get('url')
+    subtitle = data.get('subtitle')
+    title = data.get('title')
+    image_data = data.get('images')
+   
+    image = image_data['background']
+
+    if data: 
+      playlist_obj = Chart(id=id,url=url,subtitle=subtitle,title=title,image=image)
+      world_results.append(playlist_obj)
+  return world_results
+
+
+def get_blues():
+  url = "https://shazam.p.rapidapi.com/charts/track"
+
+  querystring = {"locale":"en-US","listId":"genre-global-chart-5","pageSize":"20","startFrom":"0"}
+
+  headers = {
+    "X-RapidAPI-Host": "shazam.p.rapidapi.com",
+    "X-RapidAPI-Key": "f1ecc09012msh395fade747664ecp14465djsn59429cc15c85"
+  }
+
+  response = requests.request("GET", url, headers=headers, params=querystring)
+
+  results= json.loads(response.text)
+  datas = results["tracks"]
+
+  world_results = []
+  for data in datas:
+    id = data.get('key')
+    url = data.get('url')
+    subtitle = data.get('subtitle')
+    title = data.get('title')
+    image_data = data.get('images')
+   
+    image = image_data['background']
+
+    if data: 
+      playlist_obj = Chart(id=id,url=url,subtitle=subtitle,title=title,image=image)
+      world_results.append(playlist_obj)
+  return world_results
+
+
+def get_pop():
+  url = "https://shazam.p.rapidapi.com/charts/track"
+  
+  test = 1
+
+  querystring = {"locale":"en-US","listId":"genre-global-chart-1","pageSize":"20","startFrom":"0"}
+
+  headers = {
+    "X-RapidAPI-Host": "shazam.p.rapidapi.com",
+    "X-RapidAPI-Key": "f1ecc09012msh395fade747664ecp14465djsn59429cc15c85"
+  }
+
+  response = requests.request("GET", url, headers=headers, params=querystring)
+
+  results= json.loads(response.text)
+  datas = results["tracks"]
+
+  world_results = []
+  for data in datas:
+    id = data.get('key')
+    url = data.get('url')
+    subtitle = data.get('subtitle')
+    title = data.get('title')
+    image_data = data.get('images')
+   
+    image = image_data['background']
+
+    if data: 
+      playlist_obj = Chart(id=id,url=url,subtitle=subtitle,title=title,image=image)
+      world_results.append(playlist_obj)
+  return world_results

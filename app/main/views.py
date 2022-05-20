@@ -3,7 +3,7 @@ from flask_login import login_required, current_user
 from datetime import datetime as dt
 from ..models import User
 from .forms import UpdateProfile
-from ..requests import get_playlist, get_station, search_music
+from ..requests import get_charts, get_playlist, get_station, search_music
 
 from .. import db,photos
 from . import main
@@ -12,17 +12,13 @@ from . import main
 def index():
   stations = get_station()
   playlist = get_playlist()
+  charts = get_charts()
   '''function that renders the homepage'''
   title = 'All in One Music App'
   
-  search_music = request.args.get('query')
   
-  if search_music:
-    return redirect(url_for('main.search', query=search_music))
-  
-  else:
 
-    return render_template('index.html', title=title, playlist=playlist, stations=stations)
+  return render_template('index.html', title=title, playlist=playlist, stations=stations, charts=charts)
 
 @main.route('/user/<uname>')
 def profile(uname):
@@ -65,10 +61,24 @@ def update_pic(uname):
     return redirect(url_for('main.profile',uname=uname))
 
 
+@main.route('/search')
+def find():
+  title = 'Search'
+  search_music = request.args.get('query')
+  if search_music:
+    return redirect(url_for('main.search', query=search_music, title=title))
+  
+  else:
+    return render_template('search.html')
+  
+  
+  
 @main.route('/search/<query>')
 def search(query):
 	query_list = query.split(' ')
 	query_format = "+".join(query_list)
-	search_musics = search_music(query_format)
+	search_tracks = search_music(query_format)
 	title = f'search results for {query}'
-	return render_template('search.html',title=title, music=search_musics)
+  
+  
+	return render_template('search.html',title=title, music=search_tracks)

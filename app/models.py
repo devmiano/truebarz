@@ -49,8 +49,23 @@ class Radio(db.Model):
   
     
 class Playlist(db.Model):
+  
+  __tablename__ = 'playlists'
 
-  __tablename__ = 'playlist'
+  id = db.Column(db.Integer,primary_key=True)
+  url = db.Column(db.String(255))
+  subtitle = db.Column(db.String(255))
+  title = db.Column(db.String(255))
+  image = db.Column(db.String(255))
+  users_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+
+  def __repr__(self):
+        return f"Playlist('{self.url}')"
+      
+      
+class Chart(db.Model):
+
+  __tablename__ = 'charts'
 
   id = db.Column(db.Integer,primary_key=True)
   url = db.Column(db.String(255))

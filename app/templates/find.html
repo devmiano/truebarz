@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+<section class="find">
+  <form>
+    <input type="text" name="query" placeholder="search..." />
+    <button type="submit">
+      <img
+        class="icon"
+        src="{{url_for('static', filename='icons/search.svg')}}"
+        alt="search"
+      />
+    </button>
+  </form>
+</section>
+{% endblock %}

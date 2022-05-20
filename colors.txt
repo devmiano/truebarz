@@ -27,3 +27,11 @@
   <color name="Blue Bell" hex="a195c6" r="161" g="149" b="198" />
   <color name="Middle Blue Purple" hex="897ab8" r="137" g="122" b="184" />
 </palette>
+
+genre-global-chart-13 - Dancehall
+genre-global-chart-12 - Worldwide
+genre-global-chart-11 - Afrobeats
+genre-global-chart-8 - Latin
+genre-global-chart-7 - Rock
+genre-global-chart-5 - RnB
+genre-global-chart-1 - Pop

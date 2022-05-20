@@ -10,13 +10,6 @@
     <a class="link" href="#">
       <img
         class="icon"
-        src="{{url_for('static', filename='icons/radio.svg')}}"
-        alt="radio"
-      />
-    </a>
-    <a class="link" href="#">
-      <img
-        class="icon"
         src="{{url_for('static', filename='icons/trend.svg')}}"
         alt="trend"
       />
@@ -34,23 +27,13 @@
   </div>
 
   <div class="right">
-    <a class="link" href="#">
+    <a class="link" href="{{url_for('main.find')}}">
       <img
         class="icon"
-        src="{{url_for('static', filename='icons/audio.svg')}}"
-        alt="audio"
+        src="{{url_for('static', filename='icons/search.svg')}}"
+        alt="search"
       />
     </a>
-    <form>
-      <input type="text" name="query" placeholder="search..." />
-      <button type="submit">
-        <img
-          class="icon"
-          src="{{url_for('static', filename='icons/search.svg')}}"
-          alt="search"
-        />
-      </button>
-    </form>
     {% if current_user.is_authenticated %}
     <a
       class="link"
